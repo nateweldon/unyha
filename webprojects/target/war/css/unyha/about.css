@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Checkbox & Radio Button CSS
+
+author - nweldon
+
+ */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    line-height: 1.3125em;
+}
+
+h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-top: 0em
+}
+
+/*.aboutBox {*/
+    /*width: 675px;*/
+    /*height: 410px; *//*vertical-align: middle;*/
+
+    /*background-repeat: no-repeat;*/
+    /*background-size: 675px;*/
+/*}*/

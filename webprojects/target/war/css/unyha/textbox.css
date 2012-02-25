@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* Text Box CSS
+
+author - nweldon
+
+ */
+
+/* Large Textbox (fixed width) */
+.textbox {
+	width: 202px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-width: 0;
+	position: relative;
+	color : #333333;
+	outline: 0!important;
+	display: block;
+	margin:5 0 0 0;
+	/*padding:1px 10px 0 10px;*/
+}
+
+.textbox.small {
+    height: 26px;
+    background: url('../../images/unyha/textbox_small.png') left 0px no-repeat;
+    font-size: 0.75em;
+}
+
+.textbox.normal {
+    height: 34px;
+    background: url('../../images/unyha/textbox_normal.png') left 0px no-repeat;
+    /*font-size: 0.875em;*/
+    font-size: 12px;
+}
+
+.textbox.large {
+    height: 42px;
+    background: url('../../images/unyha/textbox_large.png') left 0px no-repeat;
+    font-size: 1.25em;
+}
+
+/* Small Textbox States */
+.textbox.small:hover, .textbox.small:focus {background-position:left -35px;}
+.textbox.small.alert {background-position:left -70px;color:#d28910;}
+.textbox.small.dis {background-position:left -104px;color:#c2c2c2;}
+
+/* Normal Textbox States */
+.textbox.normal:hover, .textbox.normal:focus {background-position:left -42px;}
+.textbox.normal.alert {background-position:left -84px;color:#d28910;}
+.textbox.normal.dis {background-position:left -126px;color:#c2c2c2;}
+
+/* Large Textbox States */
+.textbox.large:hover, .textbox.large:focus {background-position:left -56px;}
+.textbox.large.alert {background-position:left -112px;color:#d28910;}
+.textbox.large.dis {background-position:left -168px;color:#c2c2c2;}

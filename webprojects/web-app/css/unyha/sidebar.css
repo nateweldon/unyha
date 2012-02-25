@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Global Top Navigation Bar 
+
+author - nweldon
+
+ */
+/*body {font-family:Arial, Helvetica, sans-serif;}*/
+
+ul.sidebar {
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+	}
+
+
+ul.sidebar li a {
+	display:block;
+	width: 224px;
+	height: 44px;
+	background: url('../../images/unyha/sidebar.gif');
+	font-size: 0.875em; color: #4c4c4c; text-shadow: 0 1px 0px #fff; font-weight: bold; text-decoration: none;
+	}
+
+ul.sidebar li a span img{padding:5px 0 0 12px;}
+/*	Normal Links */
+ul.sidebar li#top a {background-position: 0 0;}
+ul.sidebar li#middle a {background-position: 0 -44px;}
+ul.sidebar li#bottom a {background-position: 0 -88px;}
+
+
+/*	Hover Links  */
+ul.sidebar li#top a:hover  {background-position: -224px 0;}
+ul.sidebar li#middle a:hover  {background-position: -224px -44px;}
+ul.sidebar li#bottom a:hover  {background-position: -224px -88px;}
+
+
+/*	Clicked Links  */
+ul.sidebar li#top a:active {background-position: -448px 0; }
+ul.sidebar li#middle a:active {background-position: -448px -44px;}
+ul.sidebar li#bottom a:active {background-position: -448px -88px;}
+
+
+/*  Selected/Active Links  */
+ul.sidebar li#top a.selectedBtn {background-position: -672px 0; color: #fff; text-shadow: 0 -1px 0px #013e90; font-weight: bold; }
+ul.sidebar li#middle a.selectedBtn {background-position: -672px -44px; color: #fff; text-shadow: 0 -1px 0px #013e90; font-weight: bold;}
+ul.sidebar li#bottom a.selectedBtn {background-position: -672px -88px; color: #fff; text-shadow: 0 -1px 0px #013e90; font-weight: bold;}
+
+/*	Button Icon & Labels */
+
+.sidebar img{float: left; padding: 7px 0 0 8px}
+
+.sidebarLbl {float: left; padding: 12px 0 0 6px;}
+
+/*#leftnavigation {*/
+  /*position : absolute;*/
+  /*left : 0;*/
+  /*width : 10px;*/
+  /*margin-left : 235px;*/
+  /*top : 160px;*/
+  /*color : #000000;*/
+  /*padding : 3px;*/
+  /*background-color : #F0F0F0;*/
+/*}*/
+/*#rightnavigation {*/
+  /*position : absolute;*/
+  /*left : 35%;*/
+  /*top : 160px;*/
+  /*width : 650px;*/
+  /*height: 400px;*/
+  /*padding-left : 50px;*/
+  /*z-index : 3;*/
+  /*color : #000000;*/
+  /*padding : 16px;*/
+  /*background-color : #F0F0F0;*/
+/*}*/
+
+/*	Normal Links */
+/*ul.adminsmenu li#logs a a span {background: url(../images/unyha/report_32.png); background-repeat:no-repeat; width: 0px; height: 0px; position: absolute;}*/
+/*ul.adminsmenu li#security a, ul.cssmenu li#printer a, ul.cssmenu li#shifts a {background-position: -189px 0;}*/
+/*ul.adminsmenu li#license a {background-position: -378px 0;}*/
+
+
+/*	Hover Links  */
+/*ul.adminsmenu li#logs a:hover {background: url(../images/unyha/report_32.png); background-repeat:no-repeat; width: 32px; height: 32px; position: absolute;}*/
+/*ul.adminsmenu li#security a:hover, ul.cssmenu li#printer a:hover, ul.cssmenu li#shifts a:hover {background-position: -189px -45px;}*/
+/*ul.adminsmenu li#license a:hover {background-position: -378px -45px;}*/
+
+
+/*	Clicked Links  */
+/*ul.adminsmenu li#logs a:active {background: url(../images/unyha/report_32.png); background-repeat:no-repeat; width: 32px; height: 32px; position: absolute;}*/
+/*ul.adminsmenu li#security a:active, ul.cssmenu li#printer a:active, ul.cssmenu li#shifts a:active {background-position: -189px -90px;}*/
+/*ul.adminsmenu li#license a:active {background-position: -378px -90px;}*/
+
+
+/*  Selected/Active Links  */
+/*ul.adminsmenu li#logs a.selectedBtn {background: url(../images/unyha/report_32.png); background-repeat:no-repeat; width: 32px; height: 32px; position: absolute;}*/
+/*ul.adminsmenu li#security a.selectedBtn, ul.cssmenu li#printer a.selectedBtn, ul.cssmenu li#shifts a.selectedBtn {background-position: -189px -135px;}*/
+/*ul.adminsmenu li#license a.selectedBtn {background-position: -378px -135px;}*/
+
+/*	Normal Labels */
+/*ul.adminsmenu li#logs a span {background: url(../images/unyha/access_32.png); background-repeat:no-repeat; width: 32px; height: 32px; position: absolute;}*/
+/*ul.adminsmenu li#security a span {background-position: 0 0;}*/
+/*ul.adminsmenu li#license a span {background-position: -189px 0;}*/
+/*ul.adminsmenu li#about a span {background-position: -378px 0;}*/
+
+/*  Selected Labels  */
+/*ul.adminsmenu li#logs a.selectedBtn span {background: url(../images/unyha/report_32.png); background-repeat:no-repeat; width: 32px; height: 32px; position: absolute;}*/
+/*ul.adminsmenu li#security a.selectedBtn span {background-position: -189px -45px;}*/
+/*ul.adminsmenu li#license a.selectedBtn span {background-position: -378px -45px;}*/
+/*ul.adminsmenu li#about a.selectedBtn span {background-position: -567px -45px;}*/

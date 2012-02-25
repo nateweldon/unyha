@@ -1,0 +1,250 @@
+<h2>Links:</h2>
+<ul>
+<li id="linkcat-29" class="linkcat"><h2>Beer stores</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.mybeersoftheworld.com/" title="BOTW finally has a website!">Beers of the World</a></li>
+<li><a href="http://www.shop.halftimebeverage.com/main.sc">Halftime Beverage [Poughkeepsie]</a></li>
+<li><a href="http://premiergourmet.com/store/index.php" title="Beer AND food!">Premier Gourmet [Buffalo]</a></li>
+<li><a href="http://www.kegking.com/">Southtown Beverage</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-15" class="linkcat"><h2>Beer travels</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.brugsbeertje.be/" title="Daisy Claeys rocks!!">&#039;t Brugs Beertje, &quot;the little Bruges bear&quot;</a></li>
+<li><a href="http://www.biercuisine.nl/index.html" title="yummy food &amp; beer, in Dutch">Beer Cuisine [NL]</a></li>
+<li><a href="http://www.beerintheevening.com/" title="A guide to pubs &amp; clubs in the U.K.">Beer in the Evening</a></li>
+<li><a href="http://www.beermad.org.uk/" title="A great planning resource for beer travel in the UK" target="_blank">Beermad &#8211; the world&#039;s largest real ale database</a></li>
+<li><a href="http://www.belgian-beer-routes.com/" title="Belgian breweries, accommodations, and more">Belgian Beer Routes</a></li>
+<li><a href="http://belgianfamilybrewers.be/site/index.php?l=en" title="An alliance of 11 family-owned breweries in Belgium">Belgian Family Brewers</a></li>
+<li><a href="http://braukaiser.com/wiki/index.php?title=Main_Page" title="Extensive info about brewing the German way">Braukaiser &#8211; German brewing techniques</a></li>
+<li><a href="http://www.brewingnews.com/">Brewing News &#8211; GLBN, YBN, SWBN, etc.</a></li>
+<li><a href="http://www.camra.org.uk/">CAMRA, Campaign for Real Ale [UK]</a></li>
+<li><a href="http://www.cask-marque.co.uk/" title="another resource for real ale in the UK" target="_blank">Casque Mark Trust [UK]</a></li>
+<li><a href="http://www.biergoeroe.dhs.org/" title="Focus on Netherlands &amp; Belgium" target="_blank">De Biergoeroe</a></li>
+<li><a href="http://www.proximedia.com/web/dolle-brouwers.html" title="&#8220;nat en straffe&#8221; &#8230; wet &amp; strong!" target="_blank">De Dolle Brouwers</a></li>
+<li><a href="http://struise.noordhoek.com/eng/" target="_blank">De Struise Brouwers</a></li>
+<li><a href="http://www.ebenezerspub.net/" title="Arguably the best place for Belgian beers in the US!">Ebenezer&#039;s Pub &#8211; Lovell, ME</a></li>
+<li><a href="http://users.telenet.be/pajot/" title="In Dutch, about the great lambik region">Ein Reis Door Het Pajottenland</a></li>
+<li><a href="http://www.franconiabeerguide.com/" title="Bamberg and Franconia">Franconia Beer Guide [Germany]</a></li>
+<li><a href="http://www.globalbeer.com/" title="good resource for Belgian beers, travel, etc.">Global Beer [Belgium]</a></li>
+<li><a href="http://www.heritagepubs.org.uk/home/home.asp" title="CAMRA&#8217;s collection of &#8220;heritage&#8221; pubs in the UK &#8211; fascinating!">Heritage Pubs [UK]</a></li>
+<li><a href="http://www.dorst.be/" title="Yves Panneels&#8217;s wonderful lambik cafe in Eizeringen">In de Verzekering tegen de Grote Dorst</a></li>
+<li><a href="http://www.bloggen.be/originelecafes/" title="All the beers of Flanders!">Originele Cafes in Vlaanderen</a></li>
+<li><a href="http://www.europeanbeerguide.net/index.htm" target="_blank">Ron Pattinson&#039;s European beer guides</a></li>
+<li><a href="http://www.roosterfishbrewing.com/">Roosterfish brewing &#8211; Watkins Glen</a></li>
+<li><a href="http://beermapping.com/" title="A must-visit site when planning your next road trip">The Beer Mapping Project</a></li>
+<li><a href="http://www.maproom.com/" title="when lost in Chicago&#8230;">The Map Room [Chicago]</a></li>
+<li><a href="http://www.thinknydrinkny.com/">Think NY, Drink NY</a></li>
+<li><a href="http://www.whitebeertravels.co.uk/" title="R.I.P., John">White Beer Travels</a></li>
+<li><a href="http://www.zythos.be/" title="Belgium&#8217;s equivalent of the AHA">Zythos</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-16" class="linkcat"><h2>Belgian beer</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.brugsbeertje.be/" title="Daisy Claeys rocks!!">&#039;t Brugs Beertje, &quot;the little Bruges bear&quot;</a></li>
+<li><a href="http://www.beerpassion.com/index2.html" title="The site is in Dutch">Beer Passion &#8211; guide to Belgian beers</a></li>
+<li><a href="http://belgianbeerboard.com/" target="_blank">Belgian Beer Board</a></li>
+<li><a href="http://www.belgian-beer-routes.com/" title="Belgian breweries, accommodations, and more">Belgian Beer Routes</a></li>
+<li><a href="http://belgianfamilybrewers.be/site/index.php?l=en" title="An alliance of 11 family-owned breweries in Belgium">Belgian Family Brewers</a></li>
+<li><a href="http://www.bierwereld.com/nieuw/index.php" title="beer in Belgium &amp; Netherlands, in Dutch">Bier Wereld</a></li>
+<li><a href="http://www.brewlikeamonk.com/" title="Stan Hieronymous&#8217;s website" target="_blank">Brew Like A Monk</a></li>
+<li><a href="http://www.babblebelt.com/">Burgundian Babble Belt</a></li>
+<li><a href="http://www.biergoeroe.dhs.org/" title="Focus on Netherlands &amp; Belgium" target="_blank">De Biergoeroe</a></li>
+<li><a href="http://www.proximedia.com/web/dolle-brouwers.html" title="&#8220;nat en straffe&#8221; &#8230; wet &amp; strong!" target="_blank">De Dolle Brouwers</a></li>
+<li><a href="http://struise.noordhoek.com/eng/" target="_blank">De Struise Brouwers</a></li>
+<li><a href="http://users.telenet.be/pajot/" title="In Dutch, about the great lambik region">Ein Reis Door Het Pajottenland</a></li>
+<li><a href="http://www.globalbeer.com/" title="good resource for Belgian beers, travel, etc.">Global Beer [Belgium]</a></li>
+<li><a href="http://www.huisvandegeuze.be/v1.0/nl/welkom/welkom.php" title="Yves Panneels&#8217;s online lanbic ship in Lennik">Het Huis van de Geuze</a></li>
+<li><a href="http://www.dorst.be/" title="Yves Panneels&#8217;s wonderful lambik cafe in Eizeringen">In de Verzekering tegen de Grote Dorst</a></li>
+<li><a href="http://www.belgianstyle.com/mmguide/" title="includes pronunciation guide!">Multimedia Guide to Belgian Beer</a></li>
+<li><a href="http://www.ober.be/eng/main_eng.htm" title="home of the annual Kerstbierfestival" target="_blank">Objective Beer-tasters of the Essen Region</a></li>
+<li><a href="http://www.bloggen.be/originelecafes/" title="All the beers of Flanders!">Originele Cafes in Vlaanderen</a></li>
+<li><a href="http://www.zythos.be/" title="Belgium&#8217;s equivalent of the AHA">Zythos</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-17" class="linkcat"><h2>Brewing history</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://braukaiser.com/wiki/index.php?title=Main_Page" title="Extensive info about brewing the German way">Braukaiser &#8211; German brewing techniques</a></li>
+<li><a href="http://www.breweryhistory.com/" target="_blank">Brewery History Society [UK]</a></li>
+<li><a href="http://www.gruitale.com/" target="_blank">Gruit Ale</a></li>
+<li><a href="http://www.heritagepubs.org.uk/home/home.asp" title="CAMRA&#8217;s collection of &#8220;heritage&#8221; pubs in the UK &#8211; fascinating!">Heritage Pubs [UK]</a></li>
+<li><a href="http://horal.be/">Hoge Raad voor Ambachtelijke Lambikbieren</a></li>
+<li><a href="http://www.ukmalt.com/aboutMAGB/unlocking.asp">Malters Association of Great Britain</a></li>
+<li><a href="http://www.pbm.com/~lindahl/brewing.html" title="part of the Society for Creative Anachronism">Medieval &amp; Renaissance Brewing</a></li>
+<li><a href="http://www.modaruniversity.org/Brewing.htm">Medieval brewing/meadmaking links</a></li>
+<li><a href="http://michaeljacksonthebeerhunter.blogspot.com/" title="R.I.P., MJ">Michael Jackson, The Beer Hunter</a></li>
+<li><a href="http://zythophile.wordpress.com/" title="lots of history about English styles">Zythophle &#8211; beer now &amp; then</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-8" class="linkcat"><h2>Brewing in NY</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.ommegang.com/">Brewery Ommegang</a></li>
+<li><a href="http://www.brooklynbrewery.com/">Brooklyn Brewery</a></li>
+<li><a href="http://www.custombrewcrafters.com/" title="Custom Brewcrafters, Honeoye Falls NY">Custom Brewcrafters</a></li>
+<li><a href="http://www.empirebrew.com/">Empire Brewing</a></li>
+<li><a href="http://www.iloveny.com/brewerytrails/">Empire State Brewery Trails</a></li>
+<li><a href="http://www.flyingbisonbrewing.com/">Flying Bison</a></li>
+<li><a href="http://www.highfalls.com/" title="home of the 12 Horse Ale">High Falls Brewery</a></li>
+<li><a href="http://www.ithacabeer.com/">Ithaca Beer Co.</a></li>
+<li><a href="http://www.ubuale.com/" title="mmmm &#8230;. UBU">Lake Placid Brewing</a></li>
+<li><a href="http://www.936-beer.com/">Market Street Brewing Co.</a></li>
+<li><a href="http://www.middleagesbrewing.com/">Middle Ages Brewing Co.</a></li>
+<li><a href="http://www.pearlstreetgrill.com/">Pearl Street Grill &amp; Brewery</a></li>
+<li><a href="http://www.rohrbachs.com/" title="The Rohrbach Brewing Company, Rochester New York">Rohrbach Brewing Company</a></li>
+<li><a href="http://www.roosterfishbrewing.com/">Roosterfish brewing &#8211; Watkins Glen</a></li>
+<li><a href="http://www.sixpointcraftales.com/">Sixpoint Craft Ales</a></li>
+<li><a href="http://www.publick.com/">Southampton Publick House</a></li>
+<li><a href="http://www.southerntierbrewing.com/index1.html">Southern Tier Brewing Company</a></li>
+<li><a href="http://www.thinknydrinkny.com/">Think NY, Drink NY</a></li>
+<li><a href="http://www.twogoatsbrewing.com/" title="Brew pub on Seneca Lake">Two Goats Brewing</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-4" class="linkcat"><h2>Brewing Resources</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.brewery.org/brewery/library/LmbicJL0696.html" title="An old but excellent resource for lambic brewing">A Liddil Lambic Lesson</a></li>
+<li><a href="http://www.beertown.org/">American Homebrewers Association</a></li>
+<li><a href="http://www.barleydogbrewery.com/index.php?page=Brews&#038;tab=Recipes">Barley Dog Brewery &#8211; recipe page</a></li>
+<li><a href="http://beeradvocate.com/">BeerAdvocate</a></li>
+<li><a href="http://www.beersmith.com/" target="_blank">BeerSmith brewing software</a></li>
+<li><a href="http://braukaiser.com/wiki/index.php?title=Main_Page" title="Extensive info about brewing the German way">Braukaiser &#8211; German brewing techniques</a></li>
+<li><a href="http://www.brew365.com/" target="_blank">Brew 365 &#8211; homebrew recipes</a></li>
+<li><a href="http://www.brewlikeamonk.com/" title="Stan Hieronymous&#8217;s website" target="_blank">Brew Like A Monk</a></li>
+<li><a href="http://www.byo.com/">Brew Your Own</a></li>
+<li><a href="http://www.brewery.org/" title="Sadly out of date&#8230;" target="_blank">Brewery.org</a></li>
+<li><a href="http://www.brewingtechniques.com/library/index.html">Brewing Techniques archives</a></li>
+<li><a href="http://www.gruitale.com/" target="_blank">Gruit Ale</a></li>
+<li><a href="http://www.homebrewtalk.com">Home Brewing Wiki</a></li>
+<li><a href="http://www.homebrewchef.com/" title="Beer is food!">Homebrew Chef &#8211; Sean Paxton&#039;s website</a></li>
+<li><a href="http://www.ukmalt.com/aboutMAGB/unlocking.asp">Malters Association of Great Britain</a></li>
+<li><a href="http://www.maltosefalcons.com/tech/">Maltose Falcons brewing tips &amp; techniques</a></li>
+<li><a href="http://www.mbaa.com/TechQuarterly/" title="For the geek in us all">MBAA Tech Quarterly</a></li>
+<li><a href="http://www.mrmalty.com/" title="Jamil&#8217;s brewing calculators and more">Mr. Malty</a></li>
+<li><a href="http://www.ober.be/eng/main_eng.htm" title="home of the annual Kerstbierfestival" target="_blank">Objective Beer-tasters of the Essen Region</a></li>
+<li><a href="http://www.probrewer.com/" title="Intended for pros, but useful for amateurs, too">ProBrewer.com</a></li>
+<li><a href="http://www.promash.com/">Promash</a></li>
+<li><a href="http://www.tastybrew.com/calculators/">Tasty Brew brewing calculators</a></li>
+<li><a href="http://madfermentationist.blogspot.com/" title="Mike Tonsmeir&#8217;s &#8220;wild&#8221; blog">The Mad Fermentationist</a></li>
+<li><a href="http://www.wyeastlab.com/" target="_blank">Wyeast Labs</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-5" class="linkcat"><h2>Brewing Suppllies</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.austinhomebrew.com">Austin Homebrew Supply</a></li>
+<li><a href="http://www.better-bottle.com/">Better Bottle</a></li>
+<li><a href="http://www.blichmannengineering.com/">Blichmann &#8211; home of the beer gun &amp; more</a></li>
+<li><a href="http://www.ejwren.com/servlet/StoreFront">E.J. Wren [Syracuse]</a></li>
+<li><a href="http://www.freshops.com/">Freshops</a></li>
+<li><a href="http://www.hopunion.com/">HopUnion</a></li>
+<li><a href="http://www.midwestsupplies.com/">Midwest Homebrewing Supplies</a></li>
+<li><a href="http://morebeer.com/">MoreBeer!</a></li>
+<li><a href="http://www.nthomebrew.com" title="run by our friends Becky &amp; Paul Dyster">Niagara Traditions</a></li>
+<li><a href="http://www.northcountrymalt.com/">North Country Malt Supply</a></li>
+<li><a href="http://www.northernbrewer.com/">Northern Brewer</a></li>
+<li><a href="http://www.partycreations.net/" title="run by our friends Bruce &amp; Gloria Franconi">Party Creations [Red Hook]</a></li>
+<li><a href="http://www.hopsdirect.com/">Puterbaugh Farms</a></li>
+<li><a href="https://www.sunsethydro.com/Home_Page.php">Sunset Hydroponics &amp; Home Brewing</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-25" class="linkcat"><h2>British beers</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.beerintheevening.com/" title="A guide to pubs &amp; clubs in the U.K.">Beer in the Evening</a></li>
+<li><a href="http://www.camra.org.uk/page.aspx?o=180657">Beer styles according to CAMRA</a></li>
+<li><a href="http://www.beermad.org.uk/" title="A great planning resource for beer travel in the UK" target="_blank">Beermad &#8211; the world&#039;s largest real ale database</a></li>
+<li><a href="http://www.breweryhistory.com/" target="_blank">Brewery History Society [UK]</a></li>
+<li><a href="http://www.camra.org.uk/">CAMRA, Campaign for Real Ale [UK]</a></li>
+<li><a href="http://www.cask-marque.co.uk/" title="another resource for real ale in the UK" target="_blank">Casque Mark Trust [UK]</a></li>
+<li><a href="http://www.countybeermakers.org.uk/" title="Includes nice database of English ale recipes" target="_blank">County Beermakers [UK]</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-23" class="linkcat"><h2>Cider</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.cider.org.uk/" title="a wealth of cidermaking resources in the English tradition">Cider.org &#8211; small-scale cidermaking in the UK</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-22" class="linkcat"><h2>Food &amp; beer</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.biercuisine.nl/index.html" title="yummy food &amp; beer, in Dutch">Beer Cuisine [NL]</a></li>
+<li><a href="http://www.beercook.com/" title="Lucy Saunders&#8217;s site about cooking with beer">BeerCook.com</a></li>
+<li><a href="http://www.homebrewchef.com/" title="Beer is food!">Homebrew Chef &#8211; Sean Paxton&#039;s website</a></li>
+<li><a href="http://premiergourmet.com/store/index.php" title="Beer AND food!">Premier Gourmet [Buffalo]</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-26" class="linkcat"><h2>German beers</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://braukaiser.com/wiki/index.php?title=Main_Page" title="Extensive info about brewing the German way">Braukaiser &#8211; German brewing techniques</a></li>
+<li><a href="http://www.franconiabeerguide.com/" title="Bamberg and Franconia">Franconia Beer Guide [Germany]</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-19" class="linkcat"><h2>Mead</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.gotmead.com/" target="_blank">GotMead.com</a></li>
+<li><a href="http://home.comcast.net/~mzapx1/">Hightest&#039;s Honey Haven</a></li>
+<li><a href="http://www.honeylocator.com/">National Honey Board&#039;s honey locator</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-28" class="linkcat"><h2>Off-topic: music</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.jeffriales.com/" title="Check out Jeff&#8217;S music!">Jeff Riales</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-18" class="linkcat"><h2>Other homebrew clubs</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.beertown.org/">American Homebrewers Association</a></li>
+<li><a href="http://www.countybeermakers.org.uk/" title="Includes nice database of English ale recipes" target="_blank">County Beermakers [UK]</a></li>
+<li><a href="http://www.deltabrouwers.nl/" title="Homebrew organization in the Netherlands" target="_blank">Deltabrouwers (NL)</a></li>
+<li><a href="http://www.maltosefalcons.com/tech/">Maltose Falcons brewing tips &amp; techniques</a></li>
+<li><a href="http://www.maltosefalcons.com/">Maltose Falcons, world&#039;s oldest homebrew club</a></li>
+<li><a href="http://niagarabrewers.org/mmmmbeer/">Niagara Area Homebrewers</a></li>
+<li><a href="http://www.quaff.org/">Quaff [San Diego]</a></li>
+<li><a href="http://www.saltcitybrew.org/">Salt City Brew Club [Syracuse]</a></li>
+<li><a href="http://www.wort.org/">Wort Processors [Boston]</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-20" class="linkcat"><h2>Our favorite local pubs</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.boorah.com/restaurants/NY/rochester/boulevard-grill/7A72EF9F5F.html">Boulevard Grill</a></li>
+<li><a href="http://www.jbquimbys.com/">J.B. Quimby&#039;s</a></li>
+<li><a href="http://www.tapandmallet.com/public/link">Tap &amp; Mallet</a></li>
+<li><a href="http://www.theoldtoad.com/">The Old Toad</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-24" class="linkcat"><h2>Podcasts</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.basicbrewing.com/">Basic Brewing</a></li>
+<li><a href="http://www.brewium.com/podcast.php">Brewium</a></li>
+<li><a href="http://www.thebrewingnetwork.com/">The Brewing Network</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-21" class="linkcat"><h2>Styles &amp; judging</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.beertown.org/">American Homebrewers Association</a></li>
+<li><a href="http://www.camra.org.uk/page.aspx?o=180657">Beer styles according to CAMRA</a></li>
+<li><a href="http://www.bjcp.org/index.php">BJCP</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-7" class="linkcat"><h2>UNYHA Members</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.beercraftsite.com/" title="Mark Tichenor and Bruce Lish">Beercraft</a></li>
+
+	</ul>
+</li>
+</ul>
+
+</div>

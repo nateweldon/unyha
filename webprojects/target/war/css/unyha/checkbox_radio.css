@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Checkbox & Radio Button CSS
+
+author - nweldon
+ */
+
+label
+{
+ font: normal 12px/20px Arial, Sans-serif;
+ color: black;
+ vertical-align: middle;
+}
+/* common settings checkbox and radiobutton */
+input[type="checkbox"],
+input[type="radio"]
+{
+	-khtml-appearance: none;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background-image: url(../../images/unyha/radio_checkbox.png);
+	background-repeat: no-repeat;
+}
+input[type="checkbox"]
+{
+ background-position-x: left;
+}
+input[type="radio"]
+{
+ background-position-x: right;
+}
+input[type="checkbox"]:hover,
+input[type="radio"]:hover
+{
+ background-position-y: -20px;
+}
+input[type="checkbox"]:active,
+input[type="radio"]:active
+{
+ background-position-y: -40px;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked
+{
+ background-position-y: -60px;
+}
+input[type="checkbox"]:checked:hover,
+input[type="radio"]:checked:hover
+{
+ background-position-y: -80px;
+}
+input[type="checkbox"]:checked:active,
+input[type="radio"]:checked:active
+{
+ background-position-y: -100px;
+}
+/* disabled settings for checkbox and radiobutton */
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled
+{
+ background-position-y: -120px;
+}
+input[type="radio"]:checked:disabled,
+input[type="checkbox"]:checked:disabled
+{
+ background-position-y: -140px;
+}

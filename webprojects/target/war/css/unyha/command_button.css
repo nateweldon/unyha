@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* Command Button CSS
+author - nweldon
+ */
+
+/* Command button Sliding Door */
+a.button {
+	display: block;
+	float: left;
+	font: .875em "Xerox Sans", Arial, Helvetica, sans-serif;
+	line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 33px) */
+	height: 33px; /* Height of button background height */
+	padding-left: 10px; /* Width of left button image */
+	text-decoration: none;
+	margin: 0.375em;
+	text-align: center;
+}
+
+a.button strong {
+	display: block;
+	padding: 4px 10px 4px 0; /*Set 10px below to match value of 'padding-left' value above*/
+	min-width: 95px; /*Sets the minimum with of the command button to 115px*/
+}
+
+/* Command Button with icon */
+a.button.icon {	text-align: left;}
+
+/* Button Color Variations */
+a.button.normal { background: url('../../images/unyha/button_white.gif') -290px -152px no-repeat scroll; color: #333333; text-shadow: 0 1px 0px #fff;}
+a.button.normal strong { background: url('../../images/unyha/button_white.gif') 100% 0px no-repeat; }
+a.button.normal img { float:left; text-align: left; padding-top:0.3125em; padding-left:0em; text-align:left;}
+a.button.default { background: url('../../images/unyha/button_blue.gif') -290px -152px no-repeat scroll; color: #fff; text-shadow:0px -1px 0px #013e90;}
+a.button.default strong { background: url('../../images/unyha/button_blue.gif') 100% 0px no-repeat; }
+a.button.print { background: url('../../images/unyha/button_green.gif') -290px -152px no-repeat scroll; color: #333333; text-shadow: 0 1px 0px #cffb01;}
+a.button.print strong { background: url('../../images/unyha/button_green.gif') 100% 0px no-repeat; }
+a.button.details { background: url('../../images/unyha/button_turquoise.gif') -290px -152px no-repeat scroll; color: #333333; text-shadow: 0 1px 0px #c6faff;}
+a.button.details strong { background: url('../../images/unyha/button_turquoise.gif') 100% 0px no-repeat; }
+a.button.alert { background: url('../../images/unyha/button_gold.gif') -290px -152px no-repeat scroll; color: #333333; text-shadow: 0 1px 0px #fbf7c6;}
+a.button.alert strong { background: url('../../images/unyha/button_gold.gif') 100% 0px no-repeat; }
+a.button.fault { background: url('../../images/unyha/button_red.gif') -290px -152px no-repeat scroll; color: #fff; text-shadow: 0 -1px 0px #8f0f13;}
+a.button.fault strong { background: url('../../images/unyha/button_red.gif') 100% 0px no-repeat; }
+
+/* Button State Variations */
+a.button:hover { background-position: -290px -190px; }
+a.button:hover strong { background-position: 100% -38px; }
+a.button:active { background-position: -290px -228px; }
+a.button:active strong { background-position: 100% -76px; }
+a.button.disabled { background-position: -290px -266px; cursor:default; }
+a.button.disabled strong { background-position: 100% -114px; cursor:default; }
+
+
+/* Disabled Button Label Color Variations */
+a.button.normal.disabled strong { color: #b8b8b8; text-shadow:none; }
+a.button.default.disabled strong { color: #d9eaf8; text-shadow:none;}
+a.button.print.disabled strong { color: #a7b77e; text-shadow:none;}
+a.button.details.disabled strong { color: #8eb4b7; text-shadow:none;}
+a.button.alert.disabled strong { color: #e1c553; text-shadow:none;}
+a.button.fault.disabled strong { color: #bba7a7; text-shadow:none;}
+
+
+/* Button Icon Placement */
+a.button img {
+    margin: -3px 2px 0 0;
+    border:none;
+	vertical-align:middle;
+}
+
+/* License Command button Sliding Door */
+a.button.license {
+	display: block;
+	float: left;
+	font: .875em "Xerox Sans", Arial, Helvetica, sans-serif;
+	line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 33px) */
+	height: 33px; /* Height of button background height */
+	padding-left: 20px; /* Width of left button image */
+	text-decoration: none;
+	margin: 0.375em;
+	text-align: center;
+}
+
+

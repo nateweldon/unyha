@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* 
+ author - nweldon
+ 
+ */
+
+/* Pop Up CSS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    color: 333333;
+    font-weight: normal;
+    z-index: 1;
+}
+
+#blanket {
+    background-color: #5a5a5a;
+    opacity: 0.35;
+    filter: alpha(opacity = 65);
+    position: absolute;
+    z-index: 9001;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.blanket {
+    background-color: #5a5a5a;
+    opacity: 0.35;
+    filter: alpha(opacity = 65);
+    position: absolute;
+    z-index: 9001;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Alert Modal Window*/
+.alertWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    width: 525px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #fffccc;
+    -moz-box-shadow: #7a7264 0px 5px 10px;
+    -webkit-box-shadow: #7a7264 0px 5px 10px;
+    box-shadow: #7a7264 0px 5px 10px;
+}
+
+.alertWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.alertWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.alertWindow p {
+    padding: 0 1.0em 1.0em 4.5em;
+}
+
+.alertWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+
+.alertWindow .line-separator {
+    height: 1px;
+    background: #fbe29a;
+    border-bottom: 1px solid #fffeee;
+}
+
+/*Fault Modal Window*/
+.faultWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    width: 525px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #f9e3e1;
+    -moz-box-shadow: #786464 0px 5px 10px;
+    -webkit-box-shadow: #786464 0px 5px 10px;
+    box-shadow: #786464 0px 5px 10px;
+}
+
+.faultWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.faultWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.faultWindow p {
+    padding: 0 16px 16px 72px;
+}
+
+.faultWindow .line-separator {
+    height: 1px;
+    background: #e9c3c2;
+    border-bottom: 1px solid #fff7f6;
+}
+
+.faultWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+
+/*Details Modal Window*/
+.detailsWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    width: 525px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #cef3f7;
+    -moz-box-shadow: #656f72 0px 5px 10px;
+    -webkit-box-shadow: #656f72 0px 5px 10px;
+    box-shadow: #656f72 0px 5px 10px;
+}
+
+.detailsWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.detailsWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.detailsWindow p {
+    padding: 0 16px 16px 72px;
+}
+
+.detailsWindow .line-separator {
+    height: 1px;
+    background: #acd6dc;
+    border-bottom: 1px solid #ddfcff;
+}
+
+.detailsWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+
+/*About Modal Window*/
+.aboutWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    width: 525px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #cef3f7;
+    -moz-box-shadow: #656f72 0px 5px 10px;
+    -webkit-box-shadow: #656f72 0px 5px 10px;
+    box-shadow: #656f72 0px 5px 10px;
+    background-image: url(../../images/unyha/connector_bottom.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.aboutWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.aboutWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.aboutWindow p {
+    padding: 0 16px 16px 72px;
+}
+
+.aboutWindow .line-separator {
+    height: 1px;
+    background: #acd6dc;
+    border-bottom: 1px solid #ddfcff;
+}
+
+.aboutWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+
+.settingsWindow {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    vertical-align: middle;
+    width: 525px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #fff;
+    -moz-box-shadow: #767676 0px 5px 10px;
+    -webkit-box-shadow: #767676 0px 5px 10px;
+    box-shadow: #767676 0px 5px 10px;
+}
+
+.settingsWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.settingsWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.settingsWindow p {
+    padding: 0 16px 16px 72px;
+}
+
+.settingsWindow .line-separator {
+    height: 1px;
+    background: #d9d9d9;
+    border-bottom: 1px solid #fff;
+}
+
+.settingsWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+
+.groupWindowTable {
+    width: 355px;
+    height: 220px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid #d9d9d9;
+}
+
+.nopad {
+
+}
+
+.nopad td {
+    padding: 0;
+}
+
+
+/*Form Modal Window*/
+.formWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    width: 800px;
+    z-index: 9002;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    background-color: #cef3f7;
+    -moz-box-shadow: #656f72 0px 5px 10px;
+    -webkit-box-shadow: #656f72 0px 5px 10px;
+    box-shadow: #656f72 0px 5px 10px;
+}
+
+.formWindow img {
+    position: relative;
+    padding: 16px 14px 0 16px;
+    float: left;
+}
+
+.formWindow h2 {
+    font-weight: bold;
+    font-size: 1.375em;
+    padding: 6px 0 0 36px;
+}
+
+.formWindow p {
+    padding: 0 16px 16px 72px;
+}
+
+.formWindow .line-separator {
+    height: 1px;
+    background: #acd6dc;
+    border-bottom: 1px solid #ddfcff;
+}
+
+.formWindow .btn_container {
+    padding: 16px 16px 16px 16px;
+    float: right;
+}
+

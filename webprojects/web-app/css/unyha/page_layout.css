@@ -1,0 +1,1780 @@
+/*-------------------------- COLORS---------------------  */
+/*
+author - nweldon
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background: url('../../images/unyha/gradient_bg.jpg') repeat-x #3d3d3d;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* BEGIN LICENSE View Page Layout */
+table.ViewBasicLicensePageLayoutBegin {
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+    border: none;
+    margin-left: -1px;
+}
+
+table.ViewBasicLicensePageLayoutBegin thead {
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+    border: none;
+    margin-left: -1px;
+}
+
+/* BEGIN Status View Page Layout */
+
+div#ViewBasicStatusPageLayoutBegin {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    float: left;
+    width: 98%;
+}
+
+table.ViewBasicStatusPageLayoutBegin {
+    width: 98%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: #fff;
+    color: rgb(51,51,51);
+}
+
+table.ViewBasicStatusPageLayoutBegin thead {
+    padding: 0;
+    text-align: left;
+}
+
+table.ViewBasicStatusPageLayoutBegin th {
+    /*padding: 0 0 0 0;*/
+    padding-bottom: 0;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: none;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+    color: rgb(51,51,51);
+}
+
+table.ViewBasicStatusPageLayoutBegin td {
+    padding-top: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: none;
+}
+
+table.ViewBasicStatusPageLayout {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.ViewBasicStatusPageLayout th {
+    /*background: #ededed url('../../images/unyha/bg_header.png') repeat*/;
+    background: #f3f3f3;
+    border: solid 1px #d9d9d9;
+/*    background: #EDEDED;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;*/
+    color: rgb(51,51,51);
+    height: 37px;
+    text-align: left;
+    vertical-align: middle;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicStatusPageLayout th.Printer {
+    width: 97px;
+}
+
+table.ViewBasicStatusPageLayout th.Status {
+    width: 91px;
+}
+
+table.ViewBasicStatusPageLayout th.Productivity {
+    width: 122px;
+}
+
+table.ViewBasicStatusPageLayout th.Usage {
+    width: 606px;
+}
+
+table.ViewBasicStatusPageLayout th.ActiveStatusMessages {
+    width: 606px;
+}
+
+table.ViewBasicStatusPageLayout th.IndividualTargets {
+    width: 606px;
+}
+
+table.ViewBasicStatusPageLayout th.HFSIDue {
+    width: 242.666px;
+}
+
+table.ViewBasicStatusPageLayout th.HFSIServiced {
+     width: 242.666px;
+}
+
+table.ViewBasicStatusPageLayout th.TonerUsed {
+     width: 242.666px;
+}
+
+table.ViewBasicStatusPageLayout div.Usage {
+    float:left;
+    margin-top:7px;
+}
+
+table.ViewBasicStatusPageLayout div.ToggleImg {
+    float: right;
+    padding-right: 5px;
+}
+
+table.ViewBasicStatusPageLayout tr.Innerloop {
+    height: 50px;
+    vertical-align: middle;
+}
+
+table.ViewBasicStatusPageLayout td {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+    vertical-align: middle;
+    color: rgb(51,51,51);
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicStatusPageHighlight {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.ViewBasicStatusPageHighlight th {
+    /*background: #ededed url('../../images/unyha/bg_header.png') repeat*/;
+    background: #EDEDED;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;
+    color: #555555;
+    height: 32px;
+    padding: 6px 0 0 6px;
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicStatusPageHighlight tr {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    /*background: #fff;*/
+    padding: 6px 6px 6px 12px;
+    /*color: #0000ff;*/
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicStatusPageHighlight td {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 6px 6px 6px 12px;
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+/*------Do not move, needs to be below ViewBasicStatusPageLayout----  */
+table.ViewBasicStatusSecondLabelTable {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: #fff;
+}
+
+table.ViewBasicStatusSecondLabelTable td {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: #fff;
+}
+
+#ViewPageLayout {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    float: left;
+    width: 98%;
+}
+
+select.PrinterGroup, select.TimePeriod, select.View, select.LoginSelect {
+/*    -webkit-appearance: none;
+    -moz-appearance: none;*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+/*    background-image: url('../../images/unyha/dropDown_large.png');
+    background-repeat: no-repeat;*/
+    height: 34px;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    color: rgb(51,51,51);
+    padding: 6;
+/*    background-color: #f3f3f3;*/
+    background-color: #fff;
+    border: solid 1px #d9d9d9;
+}
+
+select.PrinterGroup {
+/*    background-position: -192 0;*/
+    width: 308px;
+}
+
+select.LoginSelect {
+/*    background-position: -300 0;*/
+    width: 200px;
+}
+
+input.LoginPassword {
+    width: 200px;
+}
+
+select.TimePeriod {
+/*    background-position: -360 0;*/
+    width: 140px;
+}
+
+select.View {
+/*    background-position: -275 0;*/
+    width: 225px;
+}
+
+/* END Status View Page Layout */
+
+/* BEGIN History View Page Layout */
+
+div.CurrentHistoryDisplay {
+    height: 100px;
+    width: 585px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    behavior:url(border-radius.htc);
+    margin: 0px;
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+    border: solid 1px #d9d9d9;
+}
+
+table.CurrentHistoryDisplay {
+    color: rgb(51,51,51);
+}
+
+table.ViewHistoryPageLayoutBegin {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background: #fff;
+}
+
+table.ViewBasicHistoryPageLayout {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.ViewBasicHistoryPageLayout th {
+    /*background: #ededed url('../../images/unyha/bg_header.png') repeat*/;
+    background: #f3f3f3;
+    border: solid 1px #d9d9d9;
+/*    background: #EDEDED;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;*/
+    color: rgb(51,51,51);
+    height: 32px;
+    vertical-align: middle;
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicHistoryPageLayout th.Printer {
+    width: 97px;
+}
+
+table.ViewBasicHistoryPageLayout th.Usage {
+    width: 819px;
+}
+
+table.ViewBasicHistoryPageLayout td {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+    padding: 6px 6px 6px 12px;
+    color: #000;
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+table.ViewBasicHistoryPageLayout div.Usage {
+    float:left;
+    margin-top:7px;
+}
+
+table.ViewBasicHistoryPageLayout div.ToggleImg {
+    float: right;
+    padding-right: 5px;
+}
+
+
+/* END History View Page Layout */
+
+/* BEGIN Shifts View Page Layout */
+
+div.AEDNavBar {
+    height: 48px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    behavior:url(border-radius.htc);
+    margin: 0px;
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+    border: solid 1px #d9d9d9;
+}
+
+table.AEDNavBar {
+/*    border-spacing: 0;
+    *//*border-collapse: collapse;*//*
+    width: 100%;*/
+}
+
+table.AEDNavBar tr:last-child td:first-child {
+/*    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;*/
+}
+
+table.AEDNavBar tr:last-child td:last-child {
+/*    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;*/
+}
+
+table.AEDNavBar th {
+    background: none;
+    color: #555555;
+    height: 32px;
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+ul.AEDNavBar {
+    /*    list-style: none;
+     padding: 0px;
+     margin: 0;*/
+}
+
+ul.AEDNavBar li a {
+    background: url('../../images/unyha/nav_bar.gif');
+    width: 156px;
+    height: 33px;
+}
+
+ul.AEDNavBar li a.enable {
+}
+
+ul.AEDNavBar li a.disable {
+/*    background-position: -214px -93px;*/
+    color: #B8B8B8;
+    text-shadow: none;
+}
+
+ul.AEDNavBar li {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+/*  border-top: 1px solid #C5C5C5;*/
+    margin: 3 5 0 0;
+    list-style: none;
+    display: block;
+    float: left;
+}
+
+ul.AEDNavBar img {
+    padding: 6px 0 0 6px;
+}
+
+ul.AEDNavBar span {
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+}
+
+/*	Hover Links  */
+ul.AEDNavBar li a:hover {
+   background-position: -214px -44px;
+}
+
+/*	Hover Links  */
+ul.AEDNavBar li a.enable:hover {
+   background-position: -214px -44px;
+}
+
+/*	Hover Links  */
+ul.AEDNavBar li a.disable:hover {
+   background-position: 0px 0px;
+}
+
+/*	Button Icon & Labels */
+.AEDNavBar img {
+    float: left;
+    padding: 22px 0 0 8px;
+}
+
+span.AEDNavBar {
+    float: left;
+    padding: 12px 0 0 6px;
+}
+
+#PopUpButton {
+    background: url('../../images/unyha/nav_bar.gif');
+    width: 180px;
+    height: 18px;
+    text-align: center;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+/*    border-top: 1px solid #C5C5C5;*/
+    border-bottom: 1px solid #C5C5C5;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    float: left;
+    color: rgb(51,51,51);
+    padding: 6px 0px 6px 6px;
+}
+
+#LicenseButton {
+    background: url('../../images/unyha/nav_bar.gif');
+    width: 187px;
+    height: 32px;
+    text-align: center;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    border-top: 1px solid #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    color: #555555;
+    padding: 6px 0 6px 6px;
+}
+
+select.Hour, select.Minute {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+/*    background-image: url('../../images/unyha/dropDown_large.png');
+    background-repeat: no-repeat;*/
+    height: 36px;
+    text-align: center;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    padding: 6;
+/*    background-color: #f3f3f3;*/
+    background-color: #fff;
+    border: solid 1px #d9d9d9;
+}
+
+select.Hour {
+/*    background-position: -400 0;*/
+    width: 100px;
+}
+
+select.Minute {
+/*    background-position: -400 0;*/
+    width: 100px;
+}
+
+select.Shift {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url('../../images/unyha/dropDown_large.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    text-align: left;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    padding: 6;
+    background-position: -5 0;
+    width: 250px;
+}
+
+table.ShiftPageLayoutHighlight {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.ShiftPageLayoutHighlight th {
+    /*background: #ededed url('../../images/unyha/bg_header.png') repeat*/;
+    background: #f3f3f3;
+    border: 1px solid #d9d9d9;
+/*    background: #EDEDED;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;*/
+    height: 34px;
+    color: rgb(51,51,51);
+    text-align: left;
+    vertical-align: middle;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+table.ShiftPageLayoutHighlight th.ProductionTargetsHeader1 {
+    background: #FFF;
+    border-top-color: #FFF;
+    border-left-color: #FFF;
+    border-bottom: 1px solid  #d9d9d9;
+}
+
+table.ShiftPageLayoutHighlight th.ProductionTargetsHeader2 {
+    border: 1px solid  #d9d9d9;
+}
+
+table.ShiftPageLayoutHighlight th.ShiftName {
+    width: 24%;
+}
+
+table.ShiftPageLayoutHighlight th.StartTime {
+    width: 10%;
+}
+
+table.ShiftPageLayoutHighlight th.EndTime {
+    width: 10%;
+}
+
+table.ShiftPageLayoutHighlight th.DaysOfWeek {
+    width: 56%;
+}
+
+table.ShiftPageLayoutHighlight th.PrinterGroupName {
+    width: 47%;
+}
+
+table.ShiftPageLayoutHighlight th.AssignedPrinters {
+    width: 53%;
+}
+
+table.ShiftPageLayoutHighlight th.PrinterName {
+    width: 20%;
+}
+
+table.ShiftPageLayoutHighlight th.TargetType {
+    width: 12%;
+}
+
+table.ShiftPageLayoutHighlight th.Overall {
+    width: 10%;
+}
+
+table.ShiftPageLayoutHighlight th.Individual {
+    width: 58%;
+}
+
+table.ShiftPageLayoutHighlight tr.Innerloop {
+    height: 50px;
+    vertical-align: middle;
+}
+
+table.ShiftPageLayoutHighlight td {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    vertical-align: middle;
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+table.ShiftPageLayoutHighlight td.ShiftName {
+    font-weight: bold;
+}
+
+table.ShiftPageLayoutHighlight td.GroupName {
+    font-weight: bold;
+}
+
+table.ShiftPageLayoutHighlight td.ShiftName a {
+    font-weight: bold;
+    color: #0C71C7;
+}
+
+table.ShiftPageLayoutHighlight td.ShiftName a:hover {
+    font-weight: bold;
+    color: #61B4F2;
+}
+
+table.ShiftPageLayoutHighlight td.StartTime {
+    text-align: right;
+    padding-left:0;
+    padding-right:35;
+}
+
+table.ShiftPageLayoutHighlight td.EndTime {
+    text-align: right;
+    padding-left:0;
+    padding-right:35;
+}
+
+table.ShiftPageLayoutHighlight td.DaysOfWeek {
+/*    color: #555555;*/
+}
+
+table.ShiftPageLayout {
+    padding-top: 10;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.ShiftPageLayout th {
+    /*background: #ededed url('../../images/unyha/bg_header.png') repeat*/;
+    background: #EDEDED;
+    border-bottom: 1px solid #8F8F8F;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;
+    color: #555555;
+    height: 34px;
+    padding: 6px 0 0 6px;
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font: bold 14px auto Arial, Helvetica, sans-serif;
+}
+
+table.ShiftPageLayout td {
+    border-right: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+    padding: 6px 6px 6px 12px;
+    color: #000;
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+}
+
+table.ShiftPageLayout td.ShiftName {
+    font-weight: bold;
+    color: #555555;
+}
+
+table.ShiftPageLayout td.ShiftName a {
+    font-weight: bold;
+    color: #0C71C7;
+}
+
+a.link {
+    font-weight: bold;
+    color: #0C71C7;
+}
+
+table.ShiftPageLayout td.ShiftName a:hover {
+    font-weight: bold;
+    color: #61B4F2;
+}
+
+table.ShiftPageLayout td.StartTime {
+    text-align: right;
+    padding-right: 4%;
+    color: #555555;
+    width: 12%;
+}
+
+table.ShiftPageLayout td.EndTime {
+    text-align: right;
+    padding-right: 4%;
+    color: #555555;
+    width: 12%;
+}
+
+table.ShiftPageLayout td.DaysOfWeek {
+    color: #555555;
+}
+
+label.AddShift.bold, label.EditShift.bold, label.Login.bold {
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+label.AddShift.normal, label.EditShift.normal {
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+span.AddShift.bold, span.EditShift.bold, span.Login.bold {
+    font: bold 16px auto Arial, Helvetica, sans-serif;
+}
+
+label.HistoryDisplay.normal {
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+    color: rgb(51,51,51);
+    border-style: none;
+    padding: 0 0 14px 0;
+}
+
+label.HistoryDisplay.bold {
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    color: rgb(51,51,51);
+    border-style: none;
+    padding: 0 0 14px 0;
+}
+
+/* END Shifts View Page Layout */
+
+input.error {
+    border: 1px solid #FF3333;
+    color: #FF3333;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+label.error {
+    color: #FF3333;
+}
+
+.ButtonFacebook {
+    background-image: url(../../images/unyha/facebook.png);
+    display: block;
+    width: 114px;
+    height: 44px;
+}
+
+.ButtonTwitter {
+    background-image: url(../../images/unyha/twitter.png);
+    display: block;
+    width: 114px;
+
+    height: 44px;
+
+}
+
+.ButtonRSS {
+    background-image: url(../../images/unyha/rss.png);
+    display: block;
+    width: 114px;
+    height: 44px;
+}
+
+.ButtonCommingSoon {
+    background-image: url(../../images/unyha/commingSoon.png);
+    display: block;
+    width: 512px;
+    height: 512px;
+}
+
+.Button {
+    background: url(../../images/unyha/button_white.gif);
+    border-bottom: 1px solid #C5C5C5;
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;
+    color: #333333;
+    text-shadow: 0 1px 0px #fff;
+    display: block;
+    float: left;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 33px) */
+    height: 33px; /* Height of button background height */
+    padding-left: 10px; /* Width of left button image */
+    text-decoration: none;
+    margin: 0.375em;
+    text-align: center;
+    width: 100px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.Button.gold:hover {
+    background: url(../../images/unyha/button_gold.gif);
+    color: #333333;
+    text-shadow: none;
+}
+
+.Button:hover {
+    background: url(../../images/unyha/button_blue.gif);
+    color: white;
+    text-shadow: none;
+}
+
+.Button:disabled {
+    color: #b8b8b8;
+    text-shadow: none;
+}
+.Button:disabled:hover {
+    color: #b8b8b8;
+    text-shadow: none;
+
+}
+
+.DefaultButton {
+    background: url(../../images/unyha/button_blue.gif);
+    color: white;
+    text-shadow: none;
+    display: block;
+    float: left;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 33px) */
+    height: 33px; /* Height of button background height */
+    padding-left: 10px; /* Width of left button image */
+    text-decoration: none;
+    margin: 0.375em;
+    text-align: center;
+    width: 100px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.DefaultButton:hover {
+    background: url(../../images/unyha/button_turquoise.gif);
+}
+
+.WarningButton {
+    background: url(../../images/unyha/button_gold.gif);
+    color: #333333;
+    text-shadow: 0 1px 0px #fff;
+    display: block;
+    float: left;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 33px) */
+    height: 33px; /* Height of button background height */
+    padding-left: 10px; /* Width of left button image */
+    text-decoration: none;
+    margin: 0.375em;
+    text-align: center;
+    width: 100px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.WarningButton:hover {
+    background: url(../../images/unyha/button_blue.gif);
+    color: white;
+    text-shadow: none;
+}
+
+button.disabled { color: #b8b8b8; text-shadow: none; }
+
+
+.oddRow {
+    background: #fff;
+}
+
+.evenRow {
+    background: #F3F3F3;
+}
+
+.evenRow.highlight, .oddRow.highlight {
+    background: #1b84ce;
+    color: #fff;
+}
+
+.highlight {
+    background: #1b84ce;
+    color: #fff;
+}
+
+
+/*-------------------------- Containers---------------------  */
+/* Resetter */
+.BodyContentContainer p,
+.BodyContentContainer h2,
+.BodyContentContainer h3,
+.BodyContentContainer h4,
+.BodyContentContainer ul,
+.BodyContentContainer li,
+.BodyContentContainer img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.Content ul {
+    list-style: none;
+}
+
+/* IE Fixes */
+.load_bg {
+    z-index: 999;
+    position: relative;
+}
+
+/* Content Stuff */
+.Content * {
+    color: #333333;
+    font-size: 11px;
+}
+
+.BodyContentContainer {
+    line-height: 1.36;
+    text-align: left;
+    width: 945px;
+    height: 90%;
+    margin: auto;
+    z-index: 100;
+    padding-top: 100px;
+    /*visibility: hidden;*/
+}
+
+.clearer {
+    clear: both;
+}
+
+/* Other */
+.Error {
+    color: #9b2583;
+    font-weight: bold;
+    display: block;
+
+}
+
+/* Columns */
+.ColumnContainer {
+    clear: both;
+    position: relative;
+    /*  padding-top: 460px;   AK: for testing without javascript */
+}
+
+.ColumnContainer div {
+    /*position: absolute;*/
+    top: 0px;
+}
+
+.ColumnContainer div div {
+    position: static;
+    top: auto;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol,
+.ColumnContainer.ThreeCol .LeftCol {
+    left: 0px;
+    width: 175px;
+}
+
+.ColumnContainer.TwoCol_ContentLeft .RightCol,
+.ColumnContainer.ThreeCol .RightCol {
+    right: 0px;
+    width: 185px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .RightCol,
+.ColumnContainer.TwoCol_ContentLeft .LeftCol {
+    width: 555px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .RightCol,
+.ColumnContainer.ThreeCol .MiddleCol {
+    left: 185px;
+}
+
+.ColumnContainer.TwoColl .RightColl {
+    /*position: absolute;*/
+    width: 680px;
+    float: right;
+    padding-top: 2%;
+    padding-right: 2%;
+    /*clear: both;*/
+    /*padding-left: 30%;*/
+
+}
+
+.ColumnContainer.TwoColl .LeftColl {
+
+    position: absolute;
+    width: 25%;
+    float: left;
+    clear: both;
+    padding-top: 2%;
+}
+
+.ColumnContainer.ThreeCol .MiddleCol {
+    width: 360px;
+}
+
+/* Module */
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block,
+.ColumnContainer.ThreeCol .LeftCol .Block,
+.ColumnContainer.ThreeCol .RightCol .Block {
+    background-image: url(../../images/unyha/sidebar_block175_bottom.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: block;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block h3,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block h3,
+.ColumnContainer.ThreeCol .LeftCol .Block h3,
+.ColumnContainer.ThreeCol .RightCol .Block h3 {
+    background-image: url(../../images/unyha/sidebar_block175_top.png);
+    background-repeat: no-repeat;
+    background-color: White;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/*AK.added this new rule */
+.ColumnContainer.ThreeCol .RightCol .Block h4 {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent {
+    padding-bottom: 13px;
+    padding-left: 13px;
+    padding-top: 8px;
+    padding-right: 13px;
+    color: #666666;
+    font-size: 11px;
+}
+
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent {
+    color: #333333;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent a,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent a,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent a,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent a {
+    color: #666666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent a:hover,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent a:hover,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent a:hover,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent a:hover,
+a.LinkHover {
+    text-decoration: underline !important;
+}
+
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block,
+.ColumnContainer.ThreeCol .RightCol .Block {
+    background-image: url(../../images/unyha/sidebar_block185_bottom.png);
+    width: 185px;
+}
+
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block h3,
+.ColumnContainer.ThreeCol .RightCol .Block h3 {
+    background-image: url(../../images/unyha/sidebar_block185_top.png);
+    width: 185px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol img,
+.ColumnContainer.TwoCol_ContentLeft .RightCol img,
+.ColumnContainer.ThreeCol .LeftCol img,
+.ColumnContainer.ThreeCol .RightCol img {
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent p,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent p,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent p,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent p {
+    margin-bottom: 4px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul {
+    padding-left: 4px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul li,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul li,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul li,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul li {
+    background-image: url(../../images/unyha/carat_11px.png);
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    margin-bottom: 4px;
+    background-position: 0px 5px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul li ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul li ul,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul li ul,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul li ul {
+    padding-top: 3px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul li li,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul li li,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul li li,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul li li {
+    padding-left: 12px;
+}
+
+/* AK: Application hover text  ---------------------------------------------*/
+
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent span.hovertext {
+    font-size: 11px;
+}
+
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent span.hovertext a span {
+    display: none;
+}
+
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent span.hovertext a:hover {
+    font-size: 99%;
+    font-color: #000000;
+}
+
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent span.hovertext a:hover span {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -10px;
+    width: 110px;
+    padding: 10px;
+    z-index: 100;
+    color: #000000;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ----end hover text-------------------------------------------------------*/
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul.Collapsing li.Closed,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul.Collapsing li.Closed,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul.Collapsing li.Closed,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul.Collapsing li.Closed {
+    background-image: url(../../images/unyha/collapse_plus.png);
+    background-position: 0px 3px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul.Collapsing li.Open,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul.Collapsing li.Open,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul.Collapsing li.Open,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul.Collapsing li.Open {
+    background-image: url(../../images/unyha/collapse_minus.png);
+    background-position: 0px 3px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul.Collapsing li.Closed ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul.Collapsing li.Closed ul,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul.Collapsing li.Closed ul,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul.Collapsing li.Closed ul {
+    display: none;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent ul.Collapsing li.Open ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent ul.Collapsing li.Open ul,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent ul.Collapsing li.Open ul,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent ul.Collapsing li.Open ul {
+    display: block;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block.FormBlock .BlockContent ul,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block.FormBlock .BlockContent ul,
+.ColumnContainer.ThreeCol .LeftCol .Block.FormBlock .BlockContent ul,
+.ColumnContainer.ThreeCol .RightCol .Block.FormBlock .BlockContent ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block.FormBlock .BlockContent ul li,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block.FormBlock .BlockContent ul li,
+.ColumnContainer.ThreeCol .LeftCol .Block.FormBlock .BlockContent ul li,
+.ColumnContainer.ThreeCol .RightCol .Block.FormBlock .BlockContent ul li {
+    padding-left: 0px !important;
+    background-image: none;
+}
+
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block.FormBlock .BlockContent ul li input,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block.FormBlock .BlockContent ul li input,
+.ColumnContainer.ThreeCol .LeftCol .Block.FormBlock .BlockContent ul li input,
+.ColumnContainer.ThreeCol .RightCol .Block.FormBlock .BlockContent ul li input,
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block.FormBlock .BlockContent ul li select,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block.FormBlock .BlockContent ul li select,
+.ColumnContainer.ThreeCol .LeftCol .Block.FormBlock .BlockContent ul li select,
+.ColumnContainer.ThreeCol .RightCol .Block.FormBlock .BlockContent ul li select {
+    display: block;
+    width: 100%;
+}
+
+.ColumnContainer.LicenseColl .RightColl {
+    position: absolute;
+    width: 25%;
+    float: right;
+    clear: both;
+    padding-left: 49%;
+
+}
+
+.ColumnContainer.LicenseColl .LeftColl {
+
+    position: absolute;
+    width: 49%;
+    float: left;
+    clear: both;
+}
+
+/* Content Stuff */
+.Content {
+    line-height: 1.36;
+    color: #333333;
+}
+
+.Content p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 11px !important;
+}
+
+.Content h2 {
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.Content h3 {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.Content h3.Lineless {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    border-bottom-width: 0px;
+}
+
+.Content ul {
+    list-style-type: square;
+    padding: 3px 0 0 15px;
+    margin: 2px 10px 12px 10px;
+    font-size: 11px !important;
+}
+
+.Content ul li {
+    color: #666666;
+}
+
+.Content a {
+    text-decoration: none;
+}
+
+.Content a:hover {
+    text-decoration: underline;
+}
+
+.Content .ContentBox {
+    margin-bottom: 10px;
+    padding: 5px 10px 10px 10px;
+}
+
+.Content .ContentBox .ContentBox_TR,
+.Content .ContentBox .ContentBox_TL,
+.Content .ContentBox .ContentBox_BR,
+.Content .ContentBox .ContentBox_BL {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    font-size: 1px;
+    background-repeat: no-repeat;
+}
+
+.Content .ContentBox .ContentBox_TR {
+    float: right;
+    top: -6px;
+    right: -11px;
+}
+
+.Content .ContentBox .ContentBox_TL {
+    float: left;
+    top: -6px;
+    left: -11px;
+}
+
+.Content .ContentBox .ContentBox_BR {
+    float: right;
+    bottom: -6px;
+    right: -11px;
+}
+
+.Content .ContentBox .ContentBox_BL {
+    float: left;
+    bottom: -6px;
+    left: -11px;
+}
+
+.Content .ContentBox .ContentBox_Content {
+    clear: both;
+}
+
+.Content .ContentBox.WhiteBox {
+    border: 1px solid #ececec;
+}
+
+.Content .ContentBox.WhiteBox .ContentBox_TR {
+    background-image: url(../../images/unyha/WhiteBox_tr.png);
+}
+
+.Content .ContentBox.WhiteBox .ContentBox_TL {
+    background-image: url(../../images/unyha/WhiteBox_tl.png);
+}
+
+.Content .ContentBox.WhiteBox .ContentBox_BR {
+    background-image: url(../../images/unyha/WhiteBox_br.png);
+}
+
+.Content .ContentBox.WhiteBox .ContentBox_BL {
+    background-image: url(../../images/unyha/WhiteBox_bl.png);
+}
+
+.Content .GreyBox {
+    background-image: url(../../images/GreyBox_bg.png);
+    margin: 0 0;
+}
+
+.Content .GreyBox .BoxTop,
+.Content .GreyBox .BoxBottom {
+    background-image: url(../../images/unyha/GreyBox_top.png);
+    background-repeat: no-repeat;
+    height: 5px;
+}
+
+.Content .GreyBox .BoxBottom {
+    background-image: url(../../images/unyha/GreyBox_bot.png);
+    background-position: bottom;
+}
+
+.Content .GreyBox p,
+.Content .GreyBox ul {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.Content .GreyBox ul {
+    margin-left: 20px;
+}
+
+.Content img.Banner {
+    margin-bottom: 7px;
+}
+
+.ColumnContainer.TwoCol_ContentRight .RightCol a:link,
+.ColumnContainer.ThreeCol .MiddleCol a:link,
+.ColumnContainer.TwoCol_ContentLeft .LeftCol a:link,
+.Content a:link,
+.ColumnContainer.TwoCol_ContentRight .RightCol a:visited,
+.ColumnContainer.ThreeCol .MiddleCol a:visited,
+.ColumnContainer.TwoCol_ContentLeft .LeftCol a:visited,
+.Content a:visited,
+.ColumnContainer.TwoCol_ContentRight .LeftCol .Block .BlockContent a:hover,
+.ColumnContainer.TwoCol_ContentLeft .RightCol .Block .BlockContent a:hover,
+.ColumnContainer.ThreeCol .LeftCol .Block .BlockContent a:hover,
+.ColumnContainer.ThreeCol .RightCol .Block .BlockContent a:hover,
+.LinkHover {
+    color: #e67600 !important;
+}
+
+ul.Carat {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul.Carat li {
+    background-image: url('../../images/unyha/carat_11px.png');
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    background-position: 0px 5px;
+}
+
+/* Forms */
+.WebForm {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.WebForm * {
+    color: #666666;
+}
+
+.WebForm h3 {
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    top: -30px;
+}
+
+/* AK: added WebForm h4     */
+.WebForm h4 {
+    font-size: 13px;
+    line-height: 2.5;
+}
+
+.FormBottom {
+    clear: both;
+    text-align: right;
+    background-color: White;
+    padding-top: 4px;
+    margin-top: 0px;
+    width: 555px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+.FormBottom a {
+
+}
+
+.WebFormCol {
+    width: 262px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.WebFormRightCol {
+    float: right;
+}
+
+.WebFormLeftCol {
+}
+
+.WebFormCol label {
+    clear: both;
+    width: 262px;
+}
+
+.WebFormCol div {
+    display: block;
+    clear: both;
+    min-height: 18px;
+}
+
+.WebFormCol .text label,
+.WebFormCol .password label {
+    text-align: right !important;
+}
+
+.WebFormCol .text input,
+.WebFormCol .password input {
+    width: 175px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.WebFormCol .checkbox input {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 160px;
+}
+
+.WebFormCol .required {
+    background-image: url(../../images/unyha/RequiredBlock.png);
+    background-repeat: no-repeat;
+    background-position: 78px 2px;
+}
+
+.WebFormCol .checkbox input {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 160px;
+}
+
+.WebFormCol .text span {
+    margin-left: 10px;
+}
+
+.ContentBox_Content.WebForm {
+    background-color: Transparent;
+    padding: 0px;
+}
+
+.ContentBox_Content.WebForm div {
+    clear: both;
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+
+.ContentBox_Content.WebForm label {
+    font-weight: bold;
+}
+
+/*AK.added this new rule */
+.ContentBox_Content.WebForm .boldtext {
+    font-weight: bold;
+}
+
+.ContentBox_Content.WebForm .disabledtext label,
+.ContentBox_Content.WebForm .text label,
+.ContentBox_Content.WebForm .password label,
+.ContentBox_Content.WebForm .checkbox label,
+.ContentBox_Content.WebForm .radio label {
+    float: left;
+    text-align: right !important;
+    width: 120px;
+}
+
+.ContentBox_Content.WebForm div.RightContent {
+    margin-left: 131px;
+}
+
+.ContentBox_Content.WebForm .disabledtext input,
+.ContentBox_Content.WebForm .text input,
+.ContentBox_Content.WebForm .text select,
+.ContentBox_Content.WebForm .text textarea,
+.ContentBox_Content.WebForm .password input {
+    float: left;
+    position: relative;
+    left: 10px;
+    width: 206px;
+}
+
+.ContentBox_Content.WebForm .disabledtext input {
+    background-color: #eeeeee;
+    color: #000;
+    /* font-weight: bold; */
+    border: 1px solid #999;
+}
+
+/* AK: added this rule for Grid login */
+.ContentBox_Content.WebForm .gridprompt label,
+.ContentBox_Content.WebForm .gridprompt input {
+    width: 30px;
+    margin-left: 55px;
+    text-align: center;
+}
+
+/* AK: added this rule for submit buttons */
+.ContentBox_Content.WebForm #backbutton {
+    float: left;
+    margin-left: 131px;
+    margin-right: 43px;
+}
+
+/* AK: added this rule for submit buttons */
+.ContentBox_Content.WebForm #forwardbutton {
+    margin-left: 43px;
+}
+
+/* AK: added this rule for submit buttons */
+.ContentBox_Content.WebForm #subbutton {
+    margin-left: 375px;
+}
+
+.ContentBox_Content.WebForm .checkbox input,
+.ContentBox_Content.WebForm .radio input {
+    float: left;
+    position: relative;
+    left: 6px;
+    top: -2px;
+}
+
+.ContentBox_Content.WebForm .checkbox span,
+.ContentBox_Content.WebForm .radio span {
+    position: relative;
+    left: 6px;
+}
+
+/* AK: added this rule for error messages  */
+.ContentBox_Content.WebForm .errmsg span {
+    color: #ff0000;
+}
+
+/* AK: added this rule for 2 column display (see account lookup) */
+.ContentBox_Content.WebForm .Lcol {
+    float: left;
+    width: 180px;
+    font-weight: bold;
+}
+
+.ContentBox_Content.WebForm .FormBottom {
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+}
+
+/* CD: added this rule for submit buttons */
+ul.LeftColumnList {
+    float: left;
+    margin-left: 30px;
+    margin-right: 43px;
+    display: inline;
+    width: 250px;
+}
+
+/* CD: added this rule for submit buttons */
+ul.RightColumnList {
+    margin-left: 250px;
+}
+
+/* CD: added this rule for submit buttons */
+.LeftColumn {
+    float: left;
+    width: 240px;
+}
+
+/* CD: added this rule for submit buttons */
+.RightColumn {
+    margin-left: 5px;
+}
+
+/* CD: added this rule for submit buttons */
+#LeftColList {
+    float: left;
+    width: 240px;
+    /*margin-right: 300px;*/
+    position: static;
+    display: inline;
+    clear: none;
+}
+
+/* CD: added this rule for submit buttons */
+#RightColList {
+    margin-left: 245px;
+    position: static;
+    clear: none;
+}
+
+#authSuccess {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
+.dateTime {
+    position: absolute;
+    left: 897;
+    top: 86px
+}
+
+.colorKey {
+    position: absolute;
+    left: 860;
+    top: 86px
+}
+
+table.ColorKeyTable {
+    width: 60%;
+    /*font: normal 8px auto Arial, Helvetica, sans-serif;*/
+}
+
+table.ColorKeyTable tr {
+    height: 12px;
+    width: 60%;
+    text-align: center;
+    line-height: 9px;
+    font-size: 9px;
+}
+
+table.ColorKeyTable td {
+    height: 12px;
+    width: 12%;
+    text-align: center;
+    line-height: 9px;
+    font-size: 9px;
+}
+
+select.PrinterGroups {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url('../../images/unyha/dropDown_large.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    padding: 6;
+    width: 357px;
+    background-position: -140 0;
+}
+
+label.PrinterGroups.bold {
+    font: bold 12px auto Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+label.PrinterGroups.normal {
+    font: normal 12px auto Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+span.PrinterGroups.bold {
+    font: bold 16px auto Arial, Helvetica, sans-serif;
+}

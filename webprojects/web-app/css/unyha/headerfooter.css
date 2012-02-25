@@ -1,0 +1,280 @@
+
+/* 
+author - nweldon
+
+*/
+.load_bg {
+    padding: 0 0 12px 0;
+}
+
+#mainContentContainer {
+    background-color: #FFFFFF;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 944px;
+}
+
+#global_header {
+    height: 275px;
+}
+
+#global_header ul {
+    display: inline;
+/*    margin: 0;*/
+    margin: 10;
+    padding: 0;
+    font-size: 10px;
+}
+
+#cn_header {
+    height: 30px;
+    width: 945px;
+    padding: 0px 19px 0 20px;
+    margin: 0 auto;
+}
+
+#cn_header * ol, #cn_header * ul {
+    list-style-type: none !important;
+    list-style-image: none !important;
+    margin: 0;
+}
+
+#cn_header hr {
+    color: #999;
+    height: 1px;
+}
+
+ul.header_gray_bar {
+    margin:0;
+    padding: 3px 0 0 0;
+    /*font-size: 11px;*/
+    text-align:left;
+    font-family: arial, helvetica, sans-serif;
+}
+
+ul.header_gray_bar li a:hover {
+    text-decoration: underline;
+}
+
+ul.header_gray_bar li {
+    display: block;
+    float: left;
+    margin: 5px 2px 5px 2px;
+    padding: 0 0 0 5px;
+    border-left: solid 1px #ccc;
+}
+
+ul.header_gray_bar li * {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+ul.header_gray_bar li.first {
+    display: block;
+    float: left;
+    margin: 5px 2px 5px 2px;
+    padding: 0 0 0 5px;
+    border-left: none;
+}
+
+#top_cap {
+    background: url('../../images/unyha/top_cap_drop.png') no-repeat bottom center;
+    height: 67px;
+    margin: 0 auto;
+}
+
+#background {
+    width: 100%;
+   /* height: 100%;*/
+    background: url('../../images/unyha/bg_drop.png') repeat-y center;
+    margin: 0px auto;
+}
+
+#global_footer div.BannerFooter {
+    height: 2.6em
+}
+
+#global_footer div.BannerFooter ul {
+    margin-top: 0.75em;
+}
+
+#global_footer {
+    clear: both;
+    color: #9A9B9C;
+    font-size: 10px;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+div.BannerFooter {
+    background-color: #F3F3F3;
+    border: 1px solid #D9D9D9;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 1em;
+}
+
+/*#banner_ftr div.cn_footer {
+    width: 740px;
+    text-align:left;
+    margin: 0px auto;
+}
+
+#banner_ftr a:link, #banner_ftr a:active, #banner_ftr a:hover, #banner_ftr a:visited  {
+    color: #999 !important;
+}
+
+#banner_ftr td#cn_footer_site_title {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+    margin: 0 5px 0 8px;
+    padding: 0 0 5px 10px;
+}
+
+#banner_ftr * strong {
+    
+    font-weight: bold;
+}*/
+
+table.cn_footer_sitenav_col {
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+
+table.cn_footer_sitenav_col td {
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+
+/*#banner_ftr div.cn_footer td.cn_footer_sitenav {
+    background: url('../../images/unyha/module_top_740x5.gif') no-repeat top #F5F5F5 ;
+    width: 740px;
+    padding: 10px 0 10px 0;
+}
+
+#banner_ftr .cn_footer_sitenav_col {
+    padding: 5px 10px 0 10px;
+    font-size: 11px;
+}
+
+#banner_ftr .cn_footer_sitenav_col_title, .cn_footer_sitenav_col_link {
+    font-weight: bold;
+    font-size: 11px;
+    color: #999;
+    font-family: arial, helvetica, sans-serif;
+    padding: 0 0 5px 0;
+}*/
+
+tr.cn_footer_sitenav_col_link td *, tr.cn_footer_sitenav_col_link td  {
+    font-weight: normal;
+    font-size: 11px !important;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.1em;
+}
+
+ul.listOfLinks {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.helperLinks li { display: inline; }
+ul.helperLinks li:first-child a { border-left: 0; }
+ul.helperLinks a:link, a:visited, a:active { text-decoration: none; }
+ul.helperLinks a:hover { text-decoration: underline; }
+ul.helperLinks a { border-left: 1px solid #797c80; color: #9a9b9c; padding-left: 0.75em; padding-right: 0.75em; }
+ul.helperLinks a img { vertical-align: middle; }
+
+ul.footer_gray_bar {
+    background: url('../../images/unyha/footer_740x31.gif') no-repeat;
+    clear: both;
+    width: 740px;
+    height: 31px;
+    margin:0;
+    padding: 3px 0 0 0;
+    font-size: 11px;
+    text-align:left;
+    font-family: arial, helvetica, sans-serif;
+}
+
+ul.footer_gray_bar li a:hover {
+    text-decoration: underline;
+}
+
+ul.footer_gray_bar li { 
+    display: block;
+    float: left;
+    margin: 5px 2px 5px 2px;
+    padding: 0 0 0 5px;
+    border-left: solid 1px #ccc;
+}
+
+ul.footer_gray_bar li * {   
+    font-weight: normal;
+    font-size: 11px;
+}
+
+ul.footer_gray_bar li.first {   
+    display: block;
+    float: left;
+    margin: 5px 2px 5px 2px;
+    padding: 0 0 0 5px;
+    border-left: none;
+}
+
+p.footer_copyright {
+    padding: 0 0 10px 8px;
+    color: #999;
+    font-size: 11px;
+    clear: both;
+    margin:0;
+    width: 722px;
+    text-align:left;
+}
+
+.cn_pnav_fmenu_ie_select_block { z-index: 0; position: absolute; left: 0px; top: 0px; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); }
+
+.cn_footer_gray_bar_selected { text-decoration: none; color: #666666; }
+
+#bottom_cap {
+    background: url('../../images/unyha/bottom_cap_drop.png') no-repeat center;
+    height: 55px;
+    margin: 0px auto;
+}
+
+#branding {
+    background-image: url("../../images/unyha/top_cap_drop.png");
+    width: 900px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 237px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 50px;
+    top: 10px;
+
+
+}
+
+/*#logo {*/
+    /*background-image: url("../../images/unyha/xerox_logo.png");*/
+    /*float: right;*/
+    /*height: 30px;*/
+    /*margin-top: 21px;*/
+    /*right: 0;*/
+/*    top: 15px;*/
+    /*width: 109px;*/
+/*}*/
+
+

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Bounding Box CSS
+
+author - nweldon
+
+ */
+
+html {font-size:100%;}
+body {font-family:Arial, Helvetica, sans-serif; font-size: 0.875em; line-height: 1.3125em; color:#333333;}
+h2{font-size: 1.25em; line-height: 1.5em; font-weight: 700; color:#555555; margin-top: 0em;  }
+
+p{padding: 0px; margin:0px;}
+
+.boundingBox {-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px; behavior:url(border-radius.htc); margin: 0px; border-collapse: collapse; }
+.boundingBox h2{padding: 16px 16px 0 16px;}
+.boundingBox img{float: left; padding: 16px 6px 16px 16px}
+
+
+.default {background-color: #f3f3f3; border: solid 1px #d9d9d9;height: 450px;}
+.default p{padding:0 16px 16px 16px; }
+.default .line-separator{height:1px; background:#d9d9d9; border-bottom:1px solid #fff;}
+.historyDisplay {background-color: #f3f3f3; border: solid 1px #d9d9d9;height:100px; width:450px; padding: 5px 1px 1px 10px;}
+
+.wizard {background-color: #f3f3f3; border: solid 1px #d9d9d9;height: 450px; width:750px;}
+.wizard p{padding:0 16px 16px 16px; }
+.wizard .line-separator{height:1px; background:#d9d9d9; border-bottom:1px solid #fff;}
+
+
+.boundingBox table{
+    background: #f3f3f3;
+    border-right: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-top: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    padding: 0 0 0 0 ;
+    margin: 10px 0 30px 0;
+    float: left;
+    clear: both;
+    border-collapse: collapse;
+    }
+
+.boundingBox table td{
+    background: #f3f3f3;
+    border-left: 1px solid #c5c5c5;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    /*padding: 100 175px 100 0px;*/
+    text-align: center;
+
+}
+
+.boundingBox table th{
+    color: #5584E0;
+    background: #f3f3f3;
+    border-left: 1px solid #c5c5c5;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    text-align: center;
+}
+
+.boundingBox commandbox{
+    margin-left: 75%;
+    float: right;
+    clear: both;
+}
+
+.boundingBox ul{width: 50%; margin: 0px 0 30px 0; padding: 0; text-align: left; }
+.boundingBox ul li{display: block; padding: 35 35 35 35px;}
+
+.details {background-color: #cef3f7; border: solid 1px #acd6dc;}
+.details p{padding:16px 16px 16px 48px; }
+.details .line-separator{height:1px; background:#acd6dc; border-bottom:1px solid #ddfcff;}
+
+.alert {background-color: #fdfece; border: solid 1px #fbe29a;}
+.alert p{padding:16px 16px 16px 48px;}
+.alert .line-separator{height:1px; background:#fbe29a; border-bottom:1px solid #fffeee;}
+
+.fault {background-color: #f9e3e1; border: solid 1px #e9c3c2;}
+.fault p{padding:16px 16px 16px 48px; }
+.fault .line-separator{height:1px; background:#e9c3c2; border-bottom:1px solid #fff7f6;}

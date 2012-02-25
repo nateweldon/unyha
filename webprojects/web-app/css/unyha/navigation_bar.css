@@ -1,0 +1,546 @@
+@charset "UTF-8";
+/* Global Top Navigation Bar 
+
+author - nweldon
+
+ */
+
+/*
+
+COLORING
+
+For ease of colortheming, the color selectors are grouped together with descriptive comments.
+Just change the color-values to apply your own color-scheme.
+
+*/
+
+
+
+
+/*	Normal Links */
+
+
+
+ul.cssmenu {
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+
+ul.cssmenu li {
+	float: left;
+}
+
+ul.cssmenu li a {
+	display: block;
+	width: 189px;
+	height: 45px;
+	background: url('../../images/unyha/nav_bar.gif');
+}
+
+ul.cssmenu li ul li{
+	float: left;
+	position: relative;
+	width: 238px;
+}
+
+li ul {
+	display: none;
+	position: absolute;
+	width:238px;
+	top: 18px;
+	left: 0;
+	margin-left:-1px;
+}
+
+li>ul {
+	top: auto;
+	left: auto;
+}
+
+li:hover ul, li.over ul {
+	display: block;
+}
+
+/*	Normal Links */
+ul.cssmenu li#status a {background-position: 0 0;}
+ul.cssmenu li#history a, ul.cssmenu li#printer a, ul.cssmenu li#shifts a {background-position: -189px 0;}
+ul.cssmenu li#admin a {background-position: -378px 0;}
+
+/*	Hover Links  */
+ul.cssmenu li#status a:hover {background-position: 0 -45px;}
+ul.cssmenu li#history a:hover, ul.cssmenu li#printer a:hover, ul.cssmenu li#shifts a:hover {background-position: -189px -45px;}
+ul.cssmenu li#admin a:hover {background-position: -378px -45px;}
+
+/*	Clicked Links  */
+ul.cssmenu li#status a:active {background-position: 0 -90px;}
+ul.cssmenu li#history a:active, ul.cssmenu li#printer a:active, ul.cssmenu li#shifts a:active {background-position: -189px -90px;}
+ul.cssmenu li#admin a:active {background-position: -378px -90px;}
+
+/*  Selected/Active Links  */
+ul.cssmenu li#status a.selectedBtn {background-position: 0 -135px;}
+ul.cssmenu li#history a.selectedBtn, ul.cssmenu li#printer a.selectedBtn, ul.cssmenu li#shifts a.selectedBtn {background-position: -189px -135px;}
+ul.cssmenu li#admin a.selectedBtn {background-position: -378px -135px;}
+
+/*	Button Labels */
+ul.cssmenu li a span {
+    background: url(../../images/unyha/nav_text_english.png);
+    background-repeat:no-repeat;
+    width: 189px;
+    height: 45px;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+/*	Normal Labels */
+ul.cssmenu li#status a span {background-position: 0 0;}
+ul.cssmenu li#history a span {background-position: -189px 0;}
+ul.cssmenu li#printer a span {background-position: -378px 0;}
+ul.cssmenu li#shifts a span {background-position: -567px 0;}
+ul.cssmenu li#admin a span {background-position: -756px 0;}
+
+/*  Selected Labels  */
+ul.cssmenu li#status a.selectedBtn span {background-position: 0 -45px;}
+ul.cssmenu li#history a.selectedBtn span {background-position: -189px -45px;}
+ul.cssmenu li#printer a.selectedBtn span {background-position: -378px -45px;}
+ul.cssmenu li#shifts a.selectedBtn span {background-position: -567px -45px;}
+ul.cssmenu li#admin a.selectedBtn span {background-position: -756px -45px;}
+
+/* start:nav_bar_common */
+/*#navigationBar { margin-bottom: 1em; }*/
+
+#navigationBar {
+    width: 945px;
+    height: 45px;
+    /*padding: 16px 19px 16px 20px;*/
+   /* padding-top: 16px;*/
+    padding-top: 30px;
+    /*margin: 0 auto;*/
+}
+
+
+#navigationBar li { float: left; height: 45px; }
+#navigationBar li a { display: block; height: 100%; }
+
+#navigationBar li span { background-position: center 0px; height: 45px; position: absolute; text-indent: -9999px; background-position: center 0px; }
+#navigationBar li.navSelected span { background-position: center -45px; }
+
+li#navBar1 a { background-position: 0 0; }
+li#navBar1 a:hover { background-position: 0 -45px; }
+li#navBar1 a:active { background-position: 0 -90px; }
+li#navBar1.navSelected a { background-position: 0 -135px; }
+li#navBar1.navSelected a:hover { background-position: 0px -135px; }
+li#navBar1.navSelected a:active { background-position: 0px -135px; }
+/* end:nav_bar_common*/
+
+
+/* start:nav_bar_2 */
+.navBar2Items li { width: 472px; }
+.navBar2Items li a { background: url('../../images/unyha/nav_bar_2.gif'); background-position: -472px 0; }
+.navBar2Items li a:hover { background-position: -472px -45px; }
+.navBar2Items li a:active { background-position: -472px -90px; }
+.navBar2Items li.navSelected a { background-position: -472px -135px; cursor: text; }
+.navBar2Items li.navSelected a:hover { background-position: -472px -135px; }
+.navBar2Items li.navSelected a:active { background-position: -472px -135px; }
+.navBar2Items li span { width: 472px; }
+.navBar2Items li#navBar2 { width: 472px; }
+.navBar2Items li#navBar2 a { background-position: -472px 0; }
+.navBar2Items li#navBar2 a:hover { background-position: -472px -45px; }
+.navBar2Items li#navBar2 a:active { background-position: -472px -90px; }
+.navBar2Items li#navBar2.navSelected a { background-position: -472px -135px; }
+.navBar2Items li#navBar2.navSelected a:hover { background-position: -472px -135px; }
+.navBar2Items li#navBar2.navSelected a:active { background-position: -472px -135px; }
+.navBar2Items li#navBar2 span { width: 472px; }
+/* end:nav_bar_2 */
+
+
+/* start:nav_bar_3 */
+.navBar3Items li { width: 315px; }
+.navBar3Items li a { background: url('../../images/unyha/nav_bar_3.gif'); background-position: -315px 0; }
+.navBar3Items li a:hover { background-position: -315px -45px; }
+.navBar3Items li a:active { background-position: -315px -90px; }
+.navBar3Items li.navSelected a { background-position: -315px -135px; cursor: text; }
+.navBar3Items li.navSelected a:hover { background-position: -315px -135px; }
+.navBar3Items li.navSelected a:active { background-position: -315px -135px; }
+.navBar3Items li span { width: 315px; }
+.navBar3Items li#navBar3 { width: 314px; }
+.navBar3Items li#navBar3 a { background-position: -630px 0; }
+.navBar3Items li#navBar3 a:hover { background-position: -630px -45px; }
+.navBar3Items li#navBar3 a:active { background-position: -630px -90px; }
+.navBar3Items li#navBar3.navSelected a { background-position: -630px -135px; }
+.navBar3Items li#navBar3.navSelected a:hover { background-position: -630px -135px; }
+.navBar3Items li#navBar3.navSelected a:active { background-position: -630px -135px; }
+.navBar3Items li#navBar3 span { width: 314px; }
+/* end:nav_bar_3 */
+
+
+/* start:nav_bar_4 */
+.navBar4Items li { width: 236px; }
+.navBar4Items li a { background: url('../../images/unyha/nav_bar_4.gif'); background-position: -236px 0; }
+.navBar4Items li a:hover { background-position: -236px -45px; }
+.navBar4Items li a:active { background-position: -236px -90px; }
+.navBar4Items li.navSelected a { background-position: -236px -135px; cursor: text; }
+.navBar4Items li.navSelected a:hover { background-position: -236px -135px; }
+.navBar4Items li.navSelected a:active { background-position: -236px -135px; }
+.navBar4Items li span { width: 236px; }
+.navBar4Items li#navBar4 { width: 236px; }
+.navBar4Items li#navBar4 a { background-position: -472px 0; }
+.navBar4Items li#navBar4 a:hover { background-position: -472px -45px; }
+.navBar4Items li#navBar4 a:active { background-position: -472px -90px; }
+.navBar4Items li#navBar4.navSelected a { background-position: -472px -135px; }
+.navBar4Items li#navBar4.navSelected a:hover { background-position: -472px -135px; }
+.navBar4Items li#navBar4.navSelected a:active { background-position: -472px -135px; }
+.navBar4Items li#navBar4 span { width: 236px; }
+/* end:nav_bar_4 */
+
+
+/* start:nav_bar_5 */
+.navBar5Items li { width: 189px; }
+.navBar5Items li a { background: url('../../images/unyha/nav_bar_5.gif'); background-position: -189px 0; }
+.navBar5Items li a:hover { background-position: -189px -45px; }
+.navBar5Items li a:active { background-position: -189px -90px; }
+.navBar5Items li.navSelected a { background-position: -189px -135px; cursor: text; }
+.navBar5Items li.navSelected a:hover { background-position: -189px -135px; }
+.navBar5Items li.navSelected a:active { background-position: -189px -135px; }
+.navBar5Items li span { width: 189px; }
+.navBar5Items li#navBar5 { width: 188px; }
+.navBar5Items li#navBar5 a { background-position: -378px 0; }
+.navBar5Items li#navBar5 a:hover { background-position: -378px -45px; }
+.navBar5Items li#navBar5 a:active { background-position: -378px -90px; }
+.navBar5Items li#navBar5.navSelected a { background-position: -378px -135px; }
+.navBar5Items li#navBar5.navSelected a:hover { background-position: -378px -135px; }
+.navBar5Items li#navBar5.navSelected a:active { background-position: -378px -135px; }
+.navBar5Items li#navBar5 span { width: 188px; }
+/* end:nav_bar_5 */
+
+
+/* start:nav_bar_6 */
+.navBar6Items li { width: 157px; }
+.navBar6Items li a { background: url('../../images/unyha/nav_bar_6.gif'); background-position: -157px 0; }
+.navBar6Items li a:hover { background-position: -157px -45px; }
+.navBar6Items li a:active { background-position: -157px -90px; }
+.navBar6Items li.navSelected a { background-position: -157px -135px; cursor: text; }
+.navBar6Items li.navSelected a:hover { background-position: -157px -135px; }
+.navBar6Items li.navSelected a:active { background-position: -157px -135px; }
+.navBar6Items li span { width: 157px; }
+.navBar6Items li#navBar6 { width: 159px; }
+.navBar6Items li#navBar6 a { background-position: -314px 0; }
+.navBar6Items li#navBar6 a:hover { background-position: -314px -45px; }
+.navBar6Items li#navBar6 a:active { background-position: -314px -90px; }
+.navBar6Items li#navBar6.navSelected a { background-position: -314px -135px; }
+.navBar6Items li#navBar6.navSelected a:hover { background-position: -314px -135px; }
+.navBar6Items li#navBar6.navSelected a:active { background-position: -314px -135px; }
+.navBar6Items li#navBar6 span { width: 159px; }
+/* end:nav_bar_6 */
+
+#navigationBar li#navBar1 span { background-image: url('../../images/unyha/navbar/global_navbar/string1/en.png'); }
+#navigationBar li#navBar2 span { background-image: url('../../images/unyha/navbar/global_navbar/string2/en.png'); }
+#navigationBar li#navBar3 span { background-image: url('../../images/unyha/navbar/global_navbar/string3/en.png'); }
+#navigationBar li#navBar4 span { background-image: url('../../images/unyha/navbar/global_navbar/string4/en.png'); }
+#navigationBar li#navBar5 span { background-image: url('../../images/unyha/navbar/global_navbar/string5/en.png'); }
+#navigationBar li#navBar6 span { background-image: url('../../images/unyha/navbar/global_navbar/string6/en.png'); }
+
+
+/* start:sidebar_common */
+#sidebar li { clear: both; margin: 0; padding: 0; }
+#sidebar li a { display: block; text-decoration: none; }
+#sidebar li span { color: #4c4c4c; text-shadow: 0 1px 0 #fff; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+#sidebar li.selected span { color: #fff; text-shadow: 0 -1px 0px #013e90; font-weight: bold; }
+/* end:sidebar_common */
+
+
+/* start:sidebar_fourth */
+ul.sidebar_fourth { width: 224px; }
+ul.sidebar_fourth li { width: 224px; }
+ul.sidebar_fourth li a { width: 224px; }
+ul.sidebar_fourth li span { width: 212px; padding-left: 12px; }
+ul.sidebar_fourth.sidebar_imgs li span { width: 178px; padding-left: 0; }
+/* end:sidebar_fourth */
+
+
+/* start:sidebar_fourth_full */
+ul#sidebar_fourth_full li a { background-image: url('../../images/unyha/sidebar_1_4_full.png'); }
+
+ul#sidebar_fourth_full li.top a { background-position: 0 0; }
+ul#sidebar_fourth_full li.middle a { background-position: 0 -44px; }
+ul#sidebar_fourth_full li.bottom a { background-position: 0 -88px; }
+
+ul#sidebar_fourth_full li.top a:hover { background-position: -224px 0; }
+ul#sidebar_fourth_full li.middle a:hover { background-position: -224px -44px; }
+ul#sidebar_fourth_full li.bottom a:hover { background-position: -224px -88px; }
+
+ul#sidebar_fourth_full li.top a:active { background-position: -448px 0; }
+ul#sidebar_fourth_full li.middle a:active { background-position: -448px -44px; }
+ul#sidebar_fourth_full li.bottom a:active { background-position: -448px -88px; }
+
+ul#sidebar_fourth_full li.top.selected a { background-position: -672px 0; }
+ul#sidebar_fourth_full li.middle.selected a { background-position: -672px -44px; }
+ul#sidebar_fourth_full li.bottom.selected a { background-position: -672px -88px; }
+/* end:sidebar_fourth_full */
+
+
+/* start:sidebar_fourth_small */
+ul#sidebar_fourth_small li a { background-image: url('../../images/unyha/sidebar_1_4_small.png'); }
+
+ul#sidebar_fourth_small li.top a { background-position: 0 0; }
+ul#sidebar_fourth_small li.middle a { background-position: 0 -32px; }
+ul#sidebar_fourth_small li.bottom a { background-position: 0 -64px; }
+
+ul#sidebar_fourth_small li.top a:hover { background-position: -224px 0; }
+ul#sidebar_fourth_small li.middle a:hover { background-position: -224px -32px; }
+ul#sidebar_fourth_small li.bottom a:hover { background-position: -224px -64px; }
+
+ul#sidebar_fourth_small li.top a:active { background-position: -448px 0; }
+ul#sidebar_fourth_small li.middle a:active { background-position: -448px -32px; }
+ul#sidebar_fourth_small li.bottom a:active { background-position: -448px -64px; }
+
+ul#sidebar_fourth_small li.top.selected a { background-position: -672px 0; }
+ul#sidebar_fourth_small li.middle.selected a { background-position: -672px -32px; }
+ul#sidebar_fourth_small li.bottom.selected a { background-position: -672px -64px; }
+/* end:sidebar_fourth_small */
+
+
+/* start:sidebar_third */
+ul.sidebar_third { width: 304px; }
+ul.sidebar_third li { width: 304px; }
+ul.sidebar_third li a { width: 304px; }
+ul.sidebar_third li span { width: 292px; padding-left: 12px; }
+ul.sidebar_third.sidebar_imgs li span { width: 258px; padding-left: 0px; }
+/* end:sidebar_third */
+
+
+/* start:sidebar_third_full */
+ul#sidebar_third_full li a { width: 304px; background-image: url('../../images/unyha/sidebar_1_3_full.png'); }
+
+ul#sidebar_third_full li.top a { background-position: 0 0; }
+ul#sidebar_third_full li.middle a { background-position: 0 -44px; }
+ul#sidebar_third_full li.bottom a { background-position: 0 -88px; }
+
+ul#sidebar_third_full li.top a:hover { background-position: -304px 0; }
+ul#sidebar_third_full li.middle a:hover { background-position: -304px -44px; }
+ul#sidebar_third_full li.bottom a:hover { background-position: -304px -88px; }
+
+ul#sidebar_third_full li.top a:active { background-position: -608px 0; }
+ul#sidebar_third_full li.middle a:active { background-position: -608 -44px; }
+ul#sidebar_third_full li.bottom a:active { background-position: -608px -88px; }
+
+ul#sidebar_third_full li.top.selected a { background-position: -912px 0; }
+ul#sidebar_third_full li.middle.selected a { background-position: -912px -44px; }
+ul#sidebar_third_full li.bottom.selected a { background-position: -912px -88px; }
+/* end:sidebar_third_full */
+
+
+/* start:sidebar_third_small */
+ul#sidebar_third_small li a { width: 304px; background-image: url('../../images/unyha/sidebar_1_3_small.png'); }
+
+ul#sidebar_third_small li.top a { background-position: 0 0; }
+ul#sidebar_third_small li.middle a { background-position: 0 -32px; }
+ul#sidebar_third_small li.bottom a { background-position: 0 -64px; }
+
+ul#sidebar_third_small li.top a:hover { background-position: -304px 0; }
+ul#sidebar_third_small li.middle a:hover { background-position: -304px -32px; }
+ul#sidebar_third_small li.bottom a:hover { background-position: -304px -64px; }
+
+ul#sidebar_third_small li.top a:active { background-position: -608px 0; }
+ul#sidebar_third_small li.middle a:active { background-position: -608 -32px; }
+ul#sidebar_third_small li.bottom a:active { background-position: -608px -64px; }
+
+ul#sidebar_third_small li.top.selected a { background-position: -912px 0; }
+ul#sidebar_third_small li.middle.selected a { background-position: -912px -32px; }
+ul#sidebar_third_small li.bottom.selected a { background-position: -912px -64px; }
+/* end:sidebar_third_small */
+
+
+/* start:sidebar_full */
+ul.sidebar_full { font-size: 0.875em; }
+ul.sidebar_full li { height: 44px; }
+ul.sidebar_full li a { height: 44px; }
+ul.sidebar_full li img { padding-top: 7px; padding-left: 8px; padding-right: 6px; float: left; }
+ul.sidebar_full li span { height: 34px; float: left; position: relative; top: 10px; }
+/* end:sidebar_full */
+
+
+/* start:sidebar_small */
+ul.sidebar_small { font-size: 0.75em; }
+ul.sidebar_small li { height: 32px; }
+ul.sidebar_small li a { height: 32px; }
+ul.sidebar_small li img { padding-top: 5px; padding-left: 8px; padding-right: 6px; float: left; }
+ul.sidebar_small li span { height: 22px; float: left; position: relative; top: 10px; white-space: nowrap; }
+/* end:sidebar_small */
+
+
+/* start:header_links */
+ul.helperLinks li { display: inline; }
+ul.helperLinks li:first-child a { border-left: 0; }
+ul.helperLinks a:link, a:visited, a:active { text-decoration: none; }
+ul.helperLinks a:hover { text-decoration: underline; }
+ul.helperLinks a { border-left: 1px solid #797c80; color: #9a9b9c; padding-left: 0.75em; padding-right: 0.75em; }
+ul.helperLinks a img { vertical-align: middle; }
+/* end:header_links */
+
+
+/*
+
+COLORING
+
+For ease of colortheming, the color selectors are grouped together with descriptive comments.
+Just change the color-values to apply your own color-scheme.
+
+*/
+
+/* Main navigation */
+
+/*.navigation li a { background-color: #aaa }*/
+/* Background-color */
+
+/*.navigation li.navigation_active a { background-color: #555; }*/
+/*Background-color of active item */
+
+/*.navigation li.navigation_active a:hover { background-color: #555;}*/
+/*Background-color of hovered active item */
+
+/*.navigation li a:hover { background-color: #999; }*/
+/*Background-color of hovered item */
+
+/*.navigation li a { color: #0063DC; }*/
+/*Text color */
+
+/*.navigation li a:hover { color: #fff; }*/
+/*Text color on hovering */
+
+/*.navigation li { border: 1px solid #888; }*/
+/*Border color */
+
+/*.navigation li.navigation_first { border-left-color: #888; }*/
+/*Border color. Typically same as above */
+
+/*.navigation li { border-left-color: #bbb; }*/
+/*Highlight border-color */
+
+/*.navigation li.navigation_active { border-left-color: #555; }*/
+/*Highlight border-color of active item */
+
+/* start:nav_bar_5 */
+
+.navigation li {
+    width: 175px;
+    height: 44px;
+    background-position: -191px 0px;
+ }
+/*.navigation li a:hover { background-position: -189px -45px; }*/
+/*.navigation li a:active { background-position: -189px -90px; }*/
+/*.navigation li.navSelected a { background-position: -189px -135px; cursor: text; }*/
+/*.navigation li.navSelected a:hover { background-position: -189px -135px; }*/
+/*.navigation li.navSelected a:active { background-position: -189px -135px; }*/
+/*.navigation li span { width: 189px; }*/
+/*.navigation li#navigation { width: 188px; }*/
+/*.navigation li#navigation a { background-position: -378px 0; }*/
+/*.navigation li#navigation a:hover { background-position: -378px -45px; }*/
+/*.navigation li#navigation a:active { background-position: -378px -90px; }*/
+/*.navigation li#navigation.navSelected a { background-position: -378px -135px; }*/
+/*.navigation li#navigation.navSelected a:hover { background-position: -378px -135px; }*/
+/*.navigation li#navigation.navSelected a:active { background-position: -378px -135px; }*/
+/*.navigation li#navigation span { width: 188px; }*/
+/* end:nav_bar_5 */
+
+/* Sub navigation */
+.subnavigation li { background-color: #555; }                       /* Background-color */
+.subnavigation li a { border-color: #555; }                         /* Should be set to the same as the above */
+.subnavigation li a { color: #008200; }                                /* Text color */
+.subnavigation li a:hover { border-color: #fff; }                   /* Markings color of hovered item */
+.subnavigation li a:hover { color: #e0e0e0; }                       /* Text color of hovered item */
+.subnavigation li.subnavigation_active a { color: #e0e0e0; }        /* Text color of active item */
+.subnavigation li.subnavigation_active a { border-color: #e0e0e0; } /* Markings color of active item */
+
+
+.navigation {
+    list-style-type: none;
+    clear: both;
+    margin: 1em 0;
+    /*font-size: 12px;*/
+    overflow: hidden;
+
+}
+
+.navigation li {
+    float: left;
+    background: url('../../images/unyha/nav_bar_5.gif');
+    background-position: -189px 0px;
+     /*border: 1px solid #888;*/
+     /*border-left-color: #bbb;*/
+}
+.navigation li.navigation_first {
+
+    background-position: 0 0;
+}
+
+.navigation li.navigation_first a:hover {
+    background-position: 0px 90px;
+}
+.navigation li.navigation_active {
+
+    background-position: -189px -135px;
+}
+.navigation li.navigation_active.navigation_first {
+
+    background-position: 0px -135px;
+}
+
+.navigation li.navigation_active.navigation_last {
+    background-position: -391px -135px;
+}
+.navigation li.navigation_last {
+    background-position: -391px 0px;
+
+}
+.navigation li a {
+    /*padding: 0.5em 1em;*/
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 44px;
+    display: block;
+    text-decoration: none;
+}
+.navigation li a:hover{
+     background-position: -189px -45px;
+}
+
+.navigation li.navigation_active a {
+    color: #ffffff;
+
+    cursor: default;
+    background-position: -189px -90px;
+}
+
+.subnavigation {
+    list-style-type: none;
+    clear: both;
+    margin: 1em 0;
+    font-size: 12px;
+    overflow: auto;  Clearing floats
+}
+.subnavigation li {
+    float: left;
+     background-color: #555;
+    padding: 0.35em 1.5em;
+    border-width: 1px 0;
+}
+.subnavigation li a {
+    display: block;
+     color: #fff;
+    padding: 2px 0;
+     border-color: #555;
+    border-style: solid;
+    border-width: 1px 0;
+    text-decoration: none;
+}
+.subnavigation li a:hover {
+     border-color: #fff;
+    border-width: 1px 0;
+}
+.subnavigation li.subnavigation_active a {
+     color: #e0e0e0;
+    cursor: default;
+     border-color: #e0e0e0;
+}

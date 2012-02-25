@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* Bounding Box CSS
+
+author - nweldon
+
+ */
+
+html {font-size:100%;}                   wizard
+body {font-family:Arial, Helvetica, sans-serif; font-size: 0.939em; line-height: 1.3125em; color:#342826; }
+h2{font-size: 1.25em; line-height: 1.5em; font-weight: 700; color:#555555; margin-top: 0em; }
+
+p{padding: 0px; margin:4px; font-size: 0.875em;}
+
+
+.wizard
+{   position: absolute;
+    top: 8%;
+    left: 26%;
+    background-color: #ffffff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    behavior:url(border-radius.htc);
+    /*border-collapse: collapse;*/
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    -moz-box-shadow: #7a7264 0px 5px 10px;
+    -webkit-box-shadow: #7a7264 0px 5px 10px;
+    box-shadow: #7a7264 0px 5px 10px;
+}
+
+.wizard h2{padding: 5px 25px 5px;}
+.wizard img{float: left; padding: 16px 6px 16px 16px}
+.wizard  .line-separator{height:3px; background:#d9d9d9; border-bottom:1px solid #fff;}
+
+
+.default {background-color: #ffffff; border: solid 1px #d9d9d9;height: 525px; width:550px}
+.default p{padding:5px 16px 16px 35px; }
+.default .line-separator{height:2px; background:#d9d9d9; border-bottom:1px solid #fff;}
+
+.startpage {
+    position: absolute;
+    top: 9%;
+    left: 26%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    -o-border-radius: 5px;
+    -icab-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(border-radius.htc);
+    /*border: solid 1px #d9d9d9;*/
+    -moz-box-shadow: #7a7264 0px 5px 10px;
+    -webkit-box-shadow: #7a7264 0px 5px 10px;
+    box-shadow: #7a7264 0px 5px 10px;
+    height: 525px;
+    width:550px
+}
+
+.startpage p{padding:5px 16px 16px 16px; }
+.startpage .line-separator{height:2px; background:#d9d9d9; border-bottom:1px solid #fff;}
+
+
+ .WizardBodyContentContainer {
+    line-height: 1.36;
+    text-align: left;
+    width: 945px;
+    height: 100%;
+    margin: auto;
+    z-index: 100;
+    background: url('../../images/unyha/gradient_bg.jpg') repeat-x #3d3d3d;
+    font-family: arial, helvetica, sans-serif;
+    /*visibility: hidden;*/
+}
+
+#bottomButtons {
+    position: absolute;
+    top: 455px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#para2 {
+    color:#2895D5;
+    position: absolute;
+    top: 80px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#para3 {
+    position: absolute;
+    top: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#para4 {
+    position: absolute;
+    top: 80px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#para5 {
+    position: absolute;
+    top: 120px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#para6 {
+    position: absolute;
+    top: 260px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+#startpara {
+    position: absolute;
+    top: 180px;
+
+}
+
+#startpara2 {
+    position: absolute;
+    top: 250px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#startpara3 {
+    position: absolute;
+    top: 430px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+#brandingSetup {
+    background-image: url("../../images/unyha/productnamesmall.png");
+    height: 21px;
+    width: 817px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align:center;
+    /*display: inline-block; */
+    /*height: 21px;*/
+    /*position: absolute;*/
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 0px;
+}
+
+#brandingStart {
+    background-image: url("../../images/unyha/productnamesmall.png");
+    height: 21px;
+    width: 817px;
+    background-repeat: no-repeat;
+    position: absolute;
+    /*display: inline-block; */
+    /*position: absolute;*/
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 120px;
+
+}
+
+
+.boundingBox commandbox{
+    margin-left: 75%;
+    float: right;
+    clear: both;
+}
+
+.alert {background-color: #fdfece; border: solid 1px #fbe29a;}
+.alert p{padding:16px 16px 16px 48px;}
+
+.message {
+    background: #f3f8fc url("../../images/skin/information.png") 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+
