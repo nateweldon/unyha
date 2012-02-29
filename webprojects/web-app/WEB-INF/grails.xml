@@ -44,6 +44,7 @@
     <resource>webprojects.AdminController</resource>
     <resource>webprojects.BeerJudgeController</resource>
     <resource>webprojects.CalendarEventsController</resource>
+    <resource>webprojects.ContestantJDOController</resource>
     <resource>webprojects.EventsController</resource>
     <resource>webprojects.GoogleGroupController</resource>
     <resource>webprojects.HomeViewerController</resource>
@@ -54,6 +55,7 @@
     <resource>webprojects.UserJDOController</resource>
     <resource>webprojects.UserRoleJDOController</resource>
     <resource>webprojects.CalendarEventsJDO</resource>
+    <resource>webprojects.ContestantJDO</resource>
     <resource>webprojects.MemberJDO</resource>
     <resource>webprojects.RoleJDO</resource>
     <resource>webprojects.UserJDO</resource>

@@ -37,6 +37,7 @@
 
     <g:javascript library="/unyha/modal_windows"/>
     <g:javascript library="jquery"/>
+    <g:javascript library="jquery/jquery-validation/jquery.validate"/>
     <jqui:resources theme="unyha"/>
 
 

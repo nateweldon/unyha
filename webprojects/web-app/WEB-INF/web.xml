@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-  <display-name>/webprojects-production-5</display-name>
+  <display-name>/webprojects-development-5</display-name>
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/applicationContext.xml</param-value>
   </context-param>
   <context-param>
     <param-name>webAppRootKey</param-name>
-    <param-value>webprojects-production-5</param-value>
+    <param-value>webprojects-development-5</param-value>
   </context-param>
   <context-param>
     <param-name>sample</param-name>

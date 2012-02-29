@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../presto/presto.iml" filepath="$PROJECT_DIR$/../../presto/presto.iml" />
       <module fileurl="file://$PROJECT_DIR$/../presto/presto.iml" filepath="$PROJECT_DIR$/../presto/presto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../presto/presto-grailsPlugins.iml" filepath="$PROJECT_DIR$/../../presto/presto-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/../presto/presto-grailsPlugins.iml" filepath="$PROJECT_DIR$/../presto/presto-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/webprojects.iml" filepath="$PROJECT_DIR$/webprojects.iml" />
       <module fileurl="file://$PROJECT_DIR$/webprojects-grailsPlugins.iml" filepath="$PROJECT_DIR$/webprojects-grailsPlugins.iml" />
