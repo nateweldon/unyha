@@ -8,9 +8,10 @@ import javax.jdo.annotations.*;
 @PersistenceCapable(identityType = IdentityType.APPLICATION, detachable = "true")
 class ContestantJDO implements Serializable {
 
+
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    Long id;
+    Long id
 
      @Persistent
      String lastName;
@@ -45,6 +46,10 @@ class ContestantJDO implements Serializable {
 
     @Persistent
     String email
+
+    @Persistent(mappedBy = "constant")
+    @Element(dependent = "true")
+    List<BeerEntryJDO> beerEntries = new ArrayList<BeerEntryJDO>()
 
 
     static constraints = {

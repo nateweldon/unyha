@@ -42,6 +42,7 @@
     <resource>LoginController</resource>
     <resource>LogoutController</resource>
     <resource>webprojects.AdminController</resource>
+    <resource>webprojects.BeerEntryJDOController</resource>
     <resource>webprojects.BeerJudgeController</resource>
     <resource>webprojects.CalendarEventsController</resource>
     <resource>webprojects.ContestantJDOController</resource>
@@ -54,6 +55,7 @@
     <resource>webprojects.RoleJDOController</resource>
     <resource>webprojects.UserJDOController</resource>
     <resource>webprojects.UserRoleJDOController</resource>
+    <resource>webprojects.BeerEntryJDO</resource>
     <resource>webprojects.CalendarEventsJDO</resource>
     <resource>webprojects.ContestantJDO</resource>
     <resource>webprojects.MemberJDO</resource>

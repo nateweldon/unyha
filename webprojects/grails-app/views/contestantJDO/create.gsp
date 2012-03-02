@@ -39,11 +39,8 @@
                     required: true
                 },
                 'homePhone':{
-                    required: true,
-                    phoneUS: true
-                },
-                'workPhone':{
-                    phoneUS: true
+                    required: true
+
                 },
                 'email':{
                     required: true,
@@ -203,7 +200,61 @@
                 </tr>
 
 
+                  <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="name">Name:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'name','errors')}">
+                        <g:textField name="name" value="${beerEntryJDOInstance?.name}" />
+                    </td>
+                </tr>
 
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="catNum">Category Num:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'catNum','errors')}">
+                        %{--<g:textField name="catNum" value="${fieldValue(bean: beerEntryJDOInstance, field: 'catNum')}" />--}%
+                        <g:select name="catNum" from="${beerCategory}" value="catNum" noSelection="['':'- Choose Category -']"/>
+                    </td>
+                </tr>
+
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="subCat">SubCategory:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'subCat','errors')}">
+                        %{--<g:textField name="subCat" value="${fieldValue(bean: beerEntryJDOInstance, field: 'subCat')}" />--}%
+                       <g:select name="subCat" from="${'A'..'F'}" value="subCat" noSelection="['':'- Choose SubCategory -']"/>
+                    </td>
+                </tr>
+
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="ingredients">Ingredients:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'ingredients','errors')}">
+                        <g:textField name="ingredients" value="${beerEntryJDOInstance?.ingredients}" />
+                    </td>
+                </tr>
+
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="comments">Comments:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'comments','errors')}">
+                        <g:textField name="comments" value="${beerEntryJDOInstance?.comments}" />
+                    </td>
+                </tr>
+
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="additionalBrewers">Additional Brewers:</label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'additionalBrewers','errors')}">
+                        <g:textField name="additionalBrewers" value="${beerEntryJDOInstance?.additionalBrewers}" />
+                    </td>
+                </tr>
 
 
 
