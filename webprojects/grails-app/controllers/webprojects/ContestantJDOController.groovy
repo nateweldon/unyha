@@ -1,6 +1,11 @@
 package webprojects
 
 import com.google.appengine.api.datastore.*
+import grails.converters.JSON
+import webprojects.ContestantJDO
+import webprojects.BeerEntryJDO
+import javax.jdo.Query;
+
 
 class ContestantJDOController {
 
@@ -90,7 +95,7 @@ class ContestantJDOController {
 
     def create = {
         def contestantJDOInstance = new ContestantJDO()
-         def beerEntryJDOInstance = new BeerEntryJDO()
+        def beerEntryJDOInstance = new BeerEntryJDO()
         def beerCategory = [1:'Light Lager', 2:'Pilsner', 3:'European Amber Lager', 4:'Dark Lager',
                 5:'Bock', 6:'Light Hybrid', 7:'Amber Hybrid', 8:'English Pale Ale', 9:'Scottish And Irish Ale',
                 10:'American Ale', 11:'English Brown Ale', 12:'Porter', 13:'Stout', 14:'India Pale Ale (IPA',
@@ -106,32 +111,62 @@ class ContestantJDOController {
     }
 
     def save = {
-        def contestantJDOInstance = new ContestantJDO(params)
-        def beerEntryJDOInstance = new BeerEntryJDO(params.catNum, params.subCat, params.name, params.ingredients,
-                                                      params.comments, params.additionalBrewers, contestantJDOInstance)
-        if (contestantJDOInstance.validate() && beerEntryJDOInstance.validate())
-        {
-        if (!contestantJDOInstance.hasErrors() && !beerEntryJDOInstance.hasErrors()) {
-            try {
-                persistenceManager.makePersistent(contestantJDOInstance)
-                persistenceManager.makePersistent(beerEntryJDOInstance)
-            } finally {
-                flash.message = "ContestantJDO ${contestantJDOInstance.id} created"
-                redirect(action: show, id: contestantJDOInstance.id)
-            }
-        }
-        }
-        render(view: 'create', model: [contestantJDOInstance: contestantJDOInstance])
+         def contestantJDOInstance = new ContestantJDO(params.fname, params.mname, params.lname, params.addr, params.state,
+                                                        Integer.parseInt(params.zip), params.hPhone, params.wPhone, params.email)
+
+        persistenceManager.makePersistent(contestantJDOInstance)
+        render params as JSON
 
     }
-       def validate = {
+    def createBeer = {
+
+        def beerEntryJDOInstance = new BeerEntryJDO(params.cat, params.sub, params.bName, params.ingred,
+                                                     params.comment, params.addit, params.fname, params.lname)
+        def query = persistenceManager.newQuery(BeerEntryJDO)
+        def beerEntryJDOInstanceList = query.execute()
+        def total = 0;
+
+
+//        ContestantJDO contestant = persistenceManager.getObjectById(ContestantJDO.class, params.fname)
+        Query queryContest = persistenceManager.newQuery(ContestantJDO.class)
+
+        def contestant = queryContest.execute()
+
+        Iterator iter = contestant.iterator()
+        while(iter.hasNext())
+        {
+            ContestantJDO contest = iter.next();
+            if (contest.lastName.equalsIgnoreCase(params.lname) && contest.firstName.equalsIgnoreCase(params.fname))
+                contest.setNumberOfEntries(contest.getNumberOfEntries()+1);
+
+        }
+
+        if (beerEntryJDOInstanceList && beerEntryJDOInstanceList.size() > 0) {
+            total = beerEntryJDOInstanceList.size() + 1
+
+
+
+        }
+        else
+        {
+            total = 1
+
+        }
+        beerEntryJDOInstance.setEntryId(total);
+         persistenceManager.makePersistent(beerEntryJDOInstance)
+        render params as JSON
+    }
+
+
+
+    def validate = {
         String result = "false"
 //        def oldPassword = params.adminPassword[1]
-//
-//        if (xeroxpresto.SecUser.findByUsername('admin').password.equalsIgnoreCase(springSecurityService.encodePassword(oldPassword)))
-//        {
-//            result = "true"
-//        }
+        //
+        //        if (xeroxpresto.SecUser.findByUsername('admin').password.equalsIgnoreCase(springSecurityService.encodePassword(oldPassword)))
+        //        {
+        //            result = "true"
+        //        }
         response.setContentType("text/json;charset=UTF-8");
 
         render result

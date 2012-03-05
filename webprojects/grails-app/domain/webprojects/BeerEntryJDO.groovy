@@ -3,14 +3,14 @@ package webprojects
 
 
 import javax.jdo.annotations.*;
-// import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION, detachable = "true")
 class BeerEntryJDO implements Serializable {
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    Long id
+    Long id;
 
     @Persistent
     Long entryId;
@@ -34,7 +34,10 @@ class BeerEntryJDO implements Serializable {
     String additionalBrewers;
 
     @Persistent
-    ContestantJDO contestant
+    String fname;
+
+    @Persistent
+    String lname;
 
     long getEntryId() {
         return entryId;
@@ -93,14 +96,16 @@ class BeerEntryJDO implements Serializable {
 
 
 
-    BeerEntryJDO(String catNum, String subCat, String name, String ingredients, String comments, String additionalBrewers, ContestantJDO contestantJDO) {
+    BeerEntryJDO(String catNum, String subCat, String name, String ingredients, String comments,
+                 String additionalBrewers, String fname, String lname) {
         this.catNum = catNum[0]
         this.subCat = subCat[0]
         this.name = name
         this.ingredients = ingredients
         this.comments = comments
         this.additionalBrewers = additionalBrewers
-        this.contestant = contestantJDO
+        this.fname = fname;
+        this.lname = lname;
 
     }
 

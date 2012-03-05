@@ -3,6 +3,7 @@ package webprojects
 
 
 import javax.jdo.annotations.*;
+import webprojects.BeerEntryJDO;
 // import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION, detachable = "true")
@@ -47,9 +48,17 @@ class ContestantJDO implements Serializable {
     @Persistent
     String email
 
-    @Persistent(mappedBy = "constant")
-    @Element(dependent = "true")
-    List<BeerEntryJDO> beerEntries = new ArrayList<BeerEntryJDO>()
+    int getNumberOfEntries() {
+        return numberOfEntries
+    }
+
+    void setNumberOfEntries(int numberOfEntries) {
+        this.numberOfEntries = numberOfEntries
+    }
+
+    @Persistent
+    int numberOfEntries
+
 
 
     static constraints = {
@@ -57,11 +66,18 @@ class ContestantJDO implements Serializable {
 
     }
 
-    public ContestantJDO(String fname, String m, String lname)
+    public ContestantJDO(String fname, String m, String lname, String addr, String state, int zip, String hPhone,
+                         String wPhone, String email)
     {
         firstName = fname;
         middleInitial = m;
         lastName = lname;
+        address = addr;
+        this.state = state;
+        this.zip = zip;
+        homePhone = hPhone;
+        workPhone = wPhone;
+        this.email = email;
     }
 
     public String getAddress() {
