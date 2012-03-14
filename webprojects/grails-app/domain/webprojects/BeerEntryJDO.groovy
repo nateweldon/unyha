@@ -39,6 +39,9 @@ class BeerEntryJDO implements Serializable {
     @Persistent
     String lname;
 
+    @Persistent
+    String email;
+
     long getEntryId() {
         return entryId;
     }
@@ -96,16 +99,17 @@ class BeerEntryJDO implements Serializable {
 
 
 
-    BeerEntryJDO(String catNum, String subCat, String name, String ingredients, String comments,
-                 String additionalBrewers, String fname, String lname) {
-        this.catNum = catNum[0]
-        this.subCat = subCat[0]
+    BeerEntryJDO(int catNum, String subCat, String name, String ingredients, String comments,
+                 String additionalBrewers, String fname, String lname, String email) {
+        this.catNum = catNum
+        this.subCat = subCat
         this.name = name
         this.ingredients = ingredients
         this.comments = comments
         this.additionalBrewers = additionalBrewers
         this.fname = fname;
         this.lname = lname;
+        this.email = email;
 
     }
 

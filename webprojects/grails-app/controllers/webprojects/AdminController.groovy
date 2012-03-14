@@ -1,7 +1,7 @@
 package webprojects
 
 import javax.jdo.Extent
-import grails.plugins.springsecurity.Secured
+//import grails.plugins.springsecurity.Secured
 
 
 //  @Secured(['ROLE_ADMIN'])

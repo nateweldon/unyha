@@ -6,10 +6,16 @@ import webprojects.ContestantJDO
 import webprojects.BeerEntryJDO
 import javax.jdo.Query;
 
+import java.util.Properties;
+
+
+
 
 class ContestantJDOController {
 
     def persistenceManager
+
+    def emailBeerContestantService
 
     def index = { redirect(action: list, params: params) }
 
@@ -92,7 +98,94 @@ class ContestantJDOController {
             redirect(action: list)
         }
     }
+    def updateSubCat = {
+        def subCat =  [
+                [name:"Light Lager",
+                           sublist:[
+                "1A. Lite American Lager",
+                "1B. Standard American Lager",
+                "1C. Premium American Lager",
+                "1D. Munich Helles",
+                "1E. Dortmunder Export" ],
+                [name:"Pilsner",
+                        sublist:[
+                "2A. German Pilsner (Pils)",
+                "2B. Bohemian Pilsener",
+                "2C. Classic American Pilsner"],
+                [name:"Europan Amber Lager",
+                        sublist:[
+                "3A. Vienna Lager",
+                "3B. Oktoberfest/Märzen"],
+                [name:"Dark Lager",
+                        sublist:[
+                "4A. Dark American Lager",
+                "4B. Munich Dunkel",
+                "4C. Schwarzbier (Black Beer)"],
+                [name:"Bock",
+                        sublist:[
+                "5A. Maibock/Helles Bock",
+                "5B. Traditional Bock",
+                "5C. Doppelbock",
+                "5D. Eisbock"],
+                [name:"Light Hybrid Beer",
+                        sublist:[
+                "6A. Cream Ale",
+                "6B. Blonde Ale ",
+                "6C. Kölsch ",
+                "6D. American Wheat or Rye Beer"],
+                [name:"Amber Hybrid Beer",
+                        sublist:[
+                "7A. Northern German Altbier",
+                "7B. California Common Beer",
+                "7C. Düsseldorf Altbier"],
+                [name:"English Pale Ale",
+                        sublist:[
+                "8A. Standard/Ordinary Bitter",
+                "8B. Special/Best/Premium Bitter",
+                "8C. Extra Special/Strong Bitter (English Pale Ale)"],
+                [name:"Scottish And Irish Ale",
+                        sublist:[
+                "9A. Scottish Light 60/-",
+        "9B. Scottish Heavy 70/-",
+        "9C. Scottish Export 80/- " ,
+        "9D. Irish Red Ale",
+                "9E. Strong Scotch Ale"],
+                [name:"AmericanAle",sublist:[
+                "10A. American Pale Ale",
+                "10B. American Amber Ale ",
+                "10C. American Brown Ale"],
+                [name:"English BrownAle", sublist:[
 
+
+                [name:"Traditional Mead", sublist:[
+               "24A. Dry Mead",
+                "24B. Semi-sweet Mead",
+                "24C. Sweet Mead"],
+                [name:"Melomel (Fruit Mead)",
+                        sublist:[
+                "25A. Cyser",
+                "25B. Pyment",
+                "25C. Other Fruit Melomel"],
+                [name:"Other Mead",
+                        sublist:{
+                "26A. Metheglin",
+                "26B. Braggot",
+                "26C. Open Category Mead"],
+
+                        [name:"Standard Cider And Perry",
+                sublist:["27A. Common Cider",
+                "27B. English Cider ",
+                "27C. French Cider",
+                "27D. Common Perry",
+                "27E. Traditional Perry"],
+                [name:"Specialty Cider And Perry",
+                        sublist:[
+                                "28A. New England Cider",
+                "28B. Fruit Cider",
+                "28C. Applewine",
+                "28D. Other Specialty Cider/Perry"]
+        ]
+    }
     def create = {
         def contestantJDOInstance = new ContestantJDO()
         def beerEntryJDOInstance = new BeerEntryJDO()
@@ -111,8 +204,8 @@ class ContestantJDOController {
     }
 
     def save = {
-         def contestantJDOInstance = new ContestantJDO(params.fname, params.mname, params.lname, params.addr, params.state,
-                                                        Integer.parseInt(params.zip), params.hPhone, params.wPhone, params.email)
+        def contestantJDOInstance = new ContestantJDO(params.fname, params.mname, params.lname, params.addr, params.state,
+                Integer.parseInt(params.zip), params.hPhone, params.wPhone, params.email)
 
         persistenceManager.makePersistent(contestantJDOInstance)
         render params as JSON
@@ -120,14 +213,12 @@ class ContestantJDOController {
     }
     def createBeer = {
 
-        def beerEntryJDOInstance = new BeerEntryJDO(params.cat, params.sub, params.bName, params.ingred,
-                                                     params.comment, params.addit, params.fname, params.lname)
+        def beerEntryJDOInstance = new BeerEntryJDO(Integer.parseInt(params.cat), params.sub, params.bName, params.ingred,
+                params.comment, params.addit, params.fname, params.lname, params.email)
         def query = persistenceManager.newQuery(BeerEntryJDO)
         def beerEntryJDOInstanceList = query.execute()
-        def total = 0;
+        def total = 1001;
 
-
-//        ContestantJDO contestant = persistenceManager.getObjectById(ContestantJDO.class, params.fname)
         Query queryContest = persistenceManager.newQuery(ContestantJDO.class)
 
         def contestant = queryContest.execute()
@@ -136,24 +227,22 @@ class ContestantJDOController {
         while(iter.hasNext())
         {
             ContestantJDO contest = iter.next();
-            if (contest.lastName.equalsIgnoreCase(params.lname) && contest.firstName.equalsIgnoreCase(params.fname))
+            if (contest.getLastName().equalsIgnoreCase(params.lname) && contest.getFirstName().equalsIgnoreCase(params.fname) && contest.getEmail().equalsIgnoreCase(params.email))
                 contest.setNumberOfEntries(contest.getNumberOfEntries()+1);
 
         }
 
         if (beerEntryJDOInstanceList && beerEntryJDOInstanceList.size() > 0) {
-            total = beerEntryJDOInstanceList.size() + 1
-
-
+            total = beerEntryJDOInstanceList.size() + 1001
 
         }
         else
         {
-            total = 1
+            total = 1001
 
         }
         beerEntryJDOInstance.setEntryId(total);
-         persistenceManager.makePersistent(beerEntryJDOInstance)
+        persistenceManager.makePersistent(beerEntryJDOInstance)
         render params as JSON
     }
 
@@ -172,4 +261,32 @@ class ContestantJDOController {
         render result
 
     }
+
+    def paypalBuy = {
+
+        def query = persistenceManager.newQuery(BeerEntryJDO)
+        def beerEntryTotal = query.execute()
+
+        Iterator iter = beerEntryTotal.iterator()
+
+
+        def totalNumberOfEntries = 0
+        while(iter.hasNext())
+        {
+
+            BeerEntryJDO contest = (BeerEntryJDO)iter.next();
+            if (contest.getLname().equalsIgnoreCase(params.lname) && contest.getFname().equalsIgnoreCase(params.fname))
+            {
+                totalNumberOfEntries++
+                emailBeerContestantService.emailContestant(contest)
+            }
+        }
+
+        //render beerEntryTotal
+        render totalNumberOfEntries * 7
+
+
+    }
+
 }
+

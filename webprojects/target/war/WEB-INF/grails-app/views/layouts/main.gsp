@@ -35,8 +35,9 @@
     <g:layoutHead/>
 
 
-    <g:javascript library="/unyha/modal_windows"/>
+    %{--<g:javascript library="/unyha/modal_windows"/>--}%
     <g:javascript library="jquery"/>
+    <g:javascript library="jquery/jquery-validation/jquery.validate"/>
     <jqui:resources theme="unyha"/>
 
 
@@ -45,7 +46,7 @@
 <body onload="${pageProperty(name: 'body.onload')}">
 <div id="blanket" style="display:none;"></div>
 
-        <g:render template="/login/loginPopup"/>
+        %{--<g:render template="/login/loginPopup"/>--}%
 
 
 

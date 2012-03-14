@@ -53,14 +53,6 @@
           <root url="jar://$USER_HOME$/AppEngine/appengine-java-sdk-1.6.1.1/lib/user/appengine-api-labs-1.6.1.1.jar!/" />
           <root url="jar://$USER_HOME$/AppEngine/appengine-java-sdk-1.6.1.1/lib/user/appengine-api-1.0-sdk-1.6.1.1.jar!/" />
           <root url="jar://$USER_HOME$/AppEngine/appengine-java-sdk-1.6.1.1/lib/impl/appengine-local-runtime.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-web/jars/spring-security-web-3.0.7.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.0.7.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.8.5.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.8.5.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-crypto/jars/spring-security-crypto-3.1.0.RC3.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.social/spring-social-web/jars/spring-social-web-1.0.0.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.social/spring-social-core/jars/spring-social-core-1.0.0.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -10,37 +10,12 @@
     <resource>JQueryTagLib</resource>
     <resource>JqueryUiPluginResources</resource>
     <resource>com.grailsrocks.jqueryui.JqueryUiTagLib</resource>
-    <resource>NavPluginResources</resource>
-    <resource>NavigationService</resource>
-    <resource>NavigationTagLib</resource>
-    <resource>PaypalUrlMappings</resource>
-    <resource>org.grails.paypal.PaypalController</resource>
-    <resource>org.grails.paypal.BuyerInformation</resource>
-    <resource>org.grails.paypal.Payment</resource>
-    <resource>org.grails.paypal.PaymentItem</resource>
-    <resource>org.grails.paypal.PaypalTagLib</resource>
-    <resource>DefaultSecurityConfig</resource>
-    <resource>grails.plugins.springsecurity.SpringSecurityService</resource>
-    <resource>grails.plugins.springsecurity.SecurityTagLib</resource>
-    <resource>DefaultSpringSocialConfig</resource>
-    <resource>SpringSocialCoreDefaultConfig</resource>
-    <resource>SpringSocialUrlMappings</resource>
-    <resource>grails.plugins.springsocial.SpringSocialConnectController</resource>
-    <resource>grails.plugins.springsocial.SpringSocialProviderSignInController</resource>
-    <resource>grails.plugins.springsocial.UserConnection</resource>
-    <resource>grails.plugins.springsocial.service.SpringSocialService</resource>
-    <resource>grails.plugins.springsocial.UtilTagLib</resource>
-    <resource>DefaultWebXmlConfig</resource>
-    <resource>YuiPluginResources</resource>
-    <resource>YuiTagLib</resource>
     <resource>BootStrap</resource>
     <resource>BuildConfig</resource>
     <resource>Config</resource>
     <resource>DataSource</resource>
     <resource>resources</resource>
     <resource>UrlMappings</resource>
-    <resource>LoginController</resource>
-    <resource>LogoutController</resource>
     <resource>webprojects.AdminController</resource>
     <resource>webprojects.BeerEntryJDOController</resource>
     <resource>webprojects.BeerJudgeController</resource>
@@ -49,20 +24,12 @@
     <resource>webprojects.EventsController</resource>
     <resource>webprojects.GoogleGroupController</resource>
     <resource>webprojects.HomeViewerController</resource>
-    <resource>webprojects.MemberJDOController</resource>
     <resource>webprojects.MembershipController</resource>
-    <resource>webprojects.PPalController</resource>
-    <resource>webprojects.RoleJDOController</resource>
-    <resource>webprojects.UserJDOController</resource>
-    <resource>webprojects.UserRoleJDOController</resource>
     <resource>webprojects.BeerEntryJDO</resource>
     <resource>webprojects.CalendarEventsJDO</resource>
     <resource>webprojects.ContestantJDO</resource>
-    <resource>webprojects.MemberJDO</resource>
-    <resource>webprojects.RoleJDO</resource>
-    <resource>webprojects.UserJDO</resource>
-    <resource>webprojects.UserRoleJDO</resource>
     <resource>webprojects.CalendarEventService</resource>
+    <resource>webprojects.EmailBeerContestantService</resource>
     <resource>webprojects.ColorKeyTagLib</resource>
     <resource>webprojects.CommentTagLib</resource>
     <resource>webprojects.FooterTagLib</resource>
@@ -78,11 +45,5 @@
     <plugin>FullCalendarGrailsPlugin</plugin>
     <plugin>JqueryGrailsPlugin</plugin>
     <plugin>JqueryUiGrailsPlugin</plugin>
-    <plugin>NavigationGrailsPlugin</plugin>
-    <plugin>PaypalGrailsPlugin</plugin>
-    <plugin>SpringSecurityCoreGrailsPlugin</plugin>
-    <plugin>SpringSocialCoreGrailsPlugin</plugin>
-    <plugin>WebxmlGrailsPlugin</plugin>
-    <plugin>YuiGrailsPlugin</plugin>
   </plugins>
 </grails>

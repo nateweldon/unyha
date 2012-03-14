@@ -8,16 +8,17 @@
 
 
 <div id="becomeAMember" class="formWindow" style="display:none;">
-%{--<h1>Create MemberJDO</h1>--}%
-%{--<g:if test="${flash.message}">--}%
-%{--<div class="message">${flash.message}</div>--}%
-%{--</g:if>--}%
-%{--<g:hasErrors bean="${memberJDOInstance}">--}%
-%{--<div class="errors">--}%
-%{--<g:renderErrors bean="${memberJDOInstance}" as="list" />--}%
-%{--</div>--}%
-%{--</g:hasErrors>--}%
-    <g:form id="becomeAMember" name="becomeAMember" controller="PPal" action="buy">
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="paypal@unyha.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="UNYHA Membership Fee">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+
         <div class="dialog">
             <table>
                 <tbody>
@@ -140,7 +141,7 @@
                     </td>
                 </tr>
 
-                 <tr class="prop">
+                <tr class="prop">
                     <td valign="top" class="name">
                         <label for="cellIncluded">Cell Included:</label>
                     </td>
@@ -149,48 +150,45 @@
                     </td>
                 </tr>
 
-                %{--<tr class="prop">--}%
-                    %{--<td align="top" class="name">--}%
-                        %{--<g:select name="membershipOption" from="${['Single - $20', 'Family - $40']}" noSelection="'':'-Select MemberShip-']" />--}%
-                    %{--</td>--}%
-                %{--</tr>--}%
+                <tr><td><input type="hidden" name="on0" value="Membership Type">Membership Type</td></tr><tr><td><select name="os0">
+                    <option value="Single">Single $20.00 USD</option>
+                    <option value="Family">Family $40.00 USD</option>
+                </select> </td></tr>
 
-                %{--<tr class="prop">--}%
-                    %{--<td valign="top" class="name">--}%
-                        %{--<label for="startingBrewDate">Starting Brew Date:</label>--}%
-                    %{--</td>--}%
-                    %{--<td valign="top" class="value ${hasErrors(bean:memberJDOInstance,field:'startingBrewDate','errors')}">--}%
-                        %{--<g:textField name="startingBrewDate" value="${fieldValue(bean: memberJDOInstance, field: 'startingBrewDate')}" />--}%
-                    %{--</td>--}%
-                %{--</tr>--}%
-
-                %{--<tr class="prop">--}%
-                    %{--<td valign="top" class="name">--}%
-                        %{--<label for="bjcpStatus">Bjcp Status:</label>--}%
-                    %{--</td>--}%
-                    %{--<td valign="top" class="value ${hasErrors(bean:memberJDOInstance,field:'bjcpStatus','errors')}">--}%
-                        %{--<g:textField name="bjcpStatus" value="${fieldValue(bean: memberJDOInstance, field: 'bjcpStatus')}" />--}%
-                    %{--</td>--}%
-                %{--</tr>--}%
 
                 </tbody>
             </table>
         </div>
 
 
+
         <div class="line-separator" style="margin-top: 50px"></div>
         <div>
             <div style="float: right;padding:10px;">
 
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="option_select0" value="Single">
+                <input type="hidden" name="option_amount0" value="20.00">
+                <input type="hidden" name="option_select1" value="Family">
+                <input type="hidden" name="option_amount1" value="40.00">
+                <input type="hidden" name="option_index" value="0">
+                %{--<paypal:button itemName="membership" originalURL="${grailsApplication.config.grails.serverURL}" itemNumber="1"--}%
+                %{--amount="40,00" buyerId="Nate" discountAmount="0"/>--}%
+                %{--<input class="Button" type="submit" name="saveButton" value="<g:message code="button.save.label.label" default="Save"/>"/>--}%
 
-                 <paypal:button itemName="membership" originalURL="${grailsApplication.config.grails.serverURL}" itemNumber="1"
-                     amount="40" buyerId="2"/>
-                <input class="Button" type="submit" name="saveButton" value="<g:message code="button.save.label.label" default="Save"/>"/>
-
-                <input class="Button" type="submit" name="cancelButton" value="<g:message code="button.cancel.label" default="Cancel"/>"/>
+                %{--<input class="Button" type="submit" name="cancelButton" value="<g:message code="button.cancel.label" default="Cancel"/>"/>--}%
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
             </div>
         </div>
-    </g:form>
+
+    </form>
+
 </div>
+
+
+
+
+
 

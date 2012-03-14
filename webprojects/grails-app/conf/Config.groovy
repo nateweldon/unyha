@@ -59,13 +59,13 @@ google.appengine.application = "newyorkhomebrewersassociation"
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
-        grails.paypal.server = "https://www.paypal.com/cgi-bin/webscr"
+        grails.paypal.server = "https://www.paypal.com/cgi-bin/unyha"
         grails.paypal.email = "paypal@unyha.com"
         grails.serverURL = "http://www.unyha.com"
     }
     development {
-        grails.paypal.server = "thhps://www.sandbox.paypal.com/cgi-bin"
-        grails.paypal.email = "nate.j_1329101792_biz@gmail.com"
+        grails.paypal.server = "https://www.sandbox.paypal.com/cgi-bin/unyha"
+        grails.paypal.email = "paypal@unyha.com"
         grails.serverURL = "http://localhost:8080"
     }
     test {

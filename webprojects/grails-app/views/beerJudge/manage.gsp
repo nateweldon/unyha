@@ -34,10 +34,17 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                 allFields = $( [] ).add( firstName ).add( lastName ).add( address ).add( state ).add( zip).add( email ).add( homePhone ),
                 tips = $( ".validateTips" );
 
-        function clear() {
-              $('#personal-form').resetForm();
-            $('#beer-form').resetForm();
-                  $('.validation-summary-valid').val("");
+        function clearForm(form)
+        {
+            $(":input", form).each(function()
+            {
+                var type = this.type;
+                var tag = this.tagName.toLowerCase();
+                if (type == 'text')
+                {
+                    this.value = "";
+                }
+            });
         }
         function updateTips( t ) {
             tips
@@ -68,12 +75,22 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                 return true;
             }
         }
+
+        function populateFields( sc ) {
+            for (i =0; i < sc.length; i++)
+            {
+                $('<option/>').val(sc[i]).html(sc[i]).appendTo('#subCat');
+            }
+        }
         $( "#personal-form" ).dialog({
             autoOpen: false,
             height: 600,
             width: 650,
             modal: true,
-            close: clear,
+            open: function() {
+                clearForm("#personal-form");
+
+            },
             buttons: {
                 "Next": function() {
                     var bValid = true;
@@ -116,14 +133,7 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                         $('body').data('hPhone', homePhone.val());
                         $('body').data('wPhone', workPhone.val());
                         $('body').data('email', email.val());
-//                        alert($('body').data('fName') + " " + $('body').data('lName') + " " +
-//                              $('body').data('address') + " " + $('body').data('state') + " " +
-//                              $('body').data('hPhone') + " " + $('body').data('email'));
 
-                    %{--var url = "/ContestantJDOController/save"--}%
-                    %{--$.post('${createLink(controller: 'contestantJDO', action:'save')}', allFields, function(json) {--}%
-                    %{--$( this ).dialog( "close" );--}%
-                    %{--});--}%
                         $.ajax({
                             type: 'POST',
                             url: '${createLink(controller:'contestantJDO', action:'save')}',
@@ -143,10 +153,10 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                             success: function( data ) {
                                 var parsed = jQuery.parseJSON(data);
                                 allFields.val( "" ).removeClass( "ui-state-error" );
-                                $( '#beer-from' ).dialog( "open" );
+                                $( "#beer-form" ).dialog( "open" );
                             }
                         });
-                        $(this).dialog("close");
+
 
                     }
 
@@ -155,16 +165,13 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                 },
 
                 Cancel: function() {
-                    $( this ).dialog( "cancel" );
+                    $( this ).dialog( "close" );
                 }
             },
             close: function() {
                 allFields.val( "" ).removeClass( "ui-state-error" );
 
-                $( "#beer-form" ).dialog( "open" );
-            },
-            cancel: function () {
-                allFields.val( "" ).removeClass( "ui-state-error" );
+
             }
         });
         $( "#beer-form" ).dialog({
@@ -173,8 +180,14 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
             autoOpen: false,
             height: 600,
             width: 650,
+            open: function() {
+                clearForm("#personal-form");
+                $("#personal-form").dialog("close");
+                $("#done-dialog").dialog("close");
+
+            },
             modal: true,
-            close: clear,
+
             buttons: {
                 "Next": function() {
                     var bValid = true;
@@ -211,8 +224,8 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                                 'wPhone' : $('body').data('wPhone'),
                                 'email' :  $('body').data('email'),
                                 'bName' : $("#beername").val(),
-                                'cat' : $("#catNum").val(),
-                                'sub' : $("#subCat").val(),
+                                'cat' : ($("#catNum").val().split("="))[0],
+                                'sub' : ($("#subCat").val().split("="))[0],
                                 'ingred' : $("#ingredients").val(),
                                 'addit' : $("#additionalBrewers").val(),
                                 'comment' : $("#comments").val()
@@ -221,7 +234,10 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                             success: function( data ) {
                                 var parsed = jQuery.parseJSON(data);
 
-                                $( "#beer-form" ).dialog( "open" );
+                                $(this).dialog("close");
+                                $( "#done-dialog" ).dialog( "open" );
+
+
                                 allFields.val( "" ).removeClass( "ui-state-error" );
 
                             }
@@ -233,75 +249,82 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 
                 },
 
-                Done: function() {
-                    var bValid = true;
 
-                    allFields.removeClass( "ui-state-error" );
-                    var beerName = $( "#beername" )
-                    bValid = bValid && checkLength( beerName, "beername", 1, 34 );
-
-
-
-
-                    if ( bValid ) {
-                        $( "#users tbody" ).append( "<tr>" +
-                                "<td>" + firstName.val() + "</td>" +
-                                "<td>" + lastName.val() + "</td>" +
-                                "<td>" + address.val() + "</td>" +
-                                "<td>" + state.val() + "</td>" +
-                                "<td>" + zip.val() + "</td>" +
-                                "<td>" + homePhone.val() + "</td>" +
-                                "<td>" + email.val() + "</td>" +
-
-                                "</tr>" );
-                        $.ajax({
-                            type: 'POST',
-                            url: '${createLink(controller:'contestantJDO', action:'createBeer')}',
-                            data: {
-                                'fname' :  $('body').data('fName'),
-                                'mname' : $('body').data('mName'),
-                                'lname' :   $('body').data('lName'),
-                                'addr' :   $('body').data('address'),
-                                'state' :   $('body').data('state'),
-                                'zip' : $('body').data('zip'),
-                                'hPhone' : $('body').data('hPhone'),
-                                'wPhone' : $('body').data('wPhone'),
-                                'email' :  $('body').data('email'),
-                                'bName' : $("#beername").val(),
-                                'cat' : $("#catNum").val(),
-                                'sub' : $("#subCat").val(),
-                                'ingred' : $("#ingredients").val(),
-                                'addit' : $("#additionalBrewers").val(),
-                                'comment' : $("#comments").val()
-
-                            },
-                            success: function( data ) {
-                                var parsed = jQuery.parseJSON(data);
-
-                                allFields.val( "" ).removeClass( "ui-state-error" );
-
-                            }
-                        });
-
-                        $( this ).dialog( "close" );
-                    }
-                },
                 Cancel: function() {
-                    $( this ).dialog( "close" );
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '${createLink(controller:'contestantJDO', action:'updateSubCat')}',
+                        data: {
+                            'cat' : ($("#catNum").val().split("="))[0]
+
+
+                        },
+                        success: function( data ) {
+                               var parsed = jQuery.parseJSON(data);
+                               alert(parsed);
+
+                        }
+                    });
+//                    $( this ).dialog( "close" );
                 }
             },
 
-            close: function() {
-//                var personalInfo = ($('body').data('fName').serializeArray() + " " + $('body').data('lName') + " " +
-//                              $('body').data('address') + " " + $('body').data('state') + " " +
-//                              $('body').data('hPhone') + " " + $('body').data('email'));
-//                  alert(personalInfo);
 
+
+            close: function() {
                 allFields.val( "" ).removeClass( "ui-state-error" );
             }
 
 
         });
+
+        $( "#done-dialog" ).dialog({
+
+
+            autoOpen: false,
+            height: 400,
+            width: 450,
+            modal: true,
+            open: function() {
+                clearForm("#beer-form");
+                $("#beer-form").dialog("close");
+
+            },
+            buttons: {
+                "Yes": function() {
+                    $( "#beer-form" ).dialog( "open" );
+
+                },
+                "No": function() {
+
+
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '${createLink(controller:'contestantJDO', action:'paypalBuy')}',
+                        data: {
+                            'fname' :  $('body').data('fName'),
+                            'lname' :   $('body').data('lName'),
+                            'email':   $('body').data('email')
+
+                        },
+                        success: function( data ) {
+                            //    var parsed = jQuery.parseJSON(data);
+
+                            $(this).dialog("close");
+                            $('input[name=amount]').val(data);
+
+//                                alert( parsed );
+                            $("#paypalForm").submit();
+                        }
+                    });
+
+                }
+            }
+        });
+
+
 
         $( "#enter-contest" )
                 .button()
@@ -309,11 +332,15 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                     $( "#personal-form" ).dialog( "open" );
                 });
 
-
+       $('#subCat').focus(function() { }).change(function() {
+           alert('Changed');
+       });
     });
 
+
+
 </script>
-<div class="BodyContentContainer" style="height: 915px">
+<div class="BodyContentContainer" style="height: 1255px">
 <div id="personal-form" title="Enter Personal Info">
 
     <p class="validateTips">All form fields are required.</p>
@@ -434,9 +461,27 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
         </fieldset>
     </g:form>
 </div>
+<div id ="done-dialog" title="Add Another Beer ?">
+
+
+    <form  id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="paypal@unyha.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Homebrew Competition Entry Fee">
+        <input type="hidden" name="amount" value=0.00/>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <p> Would you like to add another beer?</p>
+        %{--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">--}%
+        %{--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">--}%
+    </form>
+
+</div>
+
 <div id="beer-form" title="Enter Beer Info">
-
-
     <g:form id="createBeerEntryJDO" name="createBeerJDO" action="save" method="post" >
         <fieldset>
             <table>
@@ -456,7 +501,7 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                     </td>
                     <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'catNum','errors')}">
                         %{--<g:textField name="catNum" value="${fieldValue(bean: beerEntryJDOInstance, field: 'catNum')}" />--}%
-                        <g:select name="catNum" from="${beerCategory}" value="catNum" noSelection="['':'- Choose Category -']"/>
+                        <g:select name="catNum" from="${beerCategory}" value="catNum" />
                     </td>
                 </tr>
 
@@ -466,7 +511,7 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
                     </td>
                     <td valign="top" class="value ${hasErrors(bean:beerEntryJDOInstance,field:'subCat','errors')}">
                         %{--<g:textField name="subCat" value="${fieldValue(bean: beerEntryJDOInstance, field: 'subCat')}" />--}%
-                        <g:select name="subCat" from="${'A'..'F'}" value="subCat" noSelection="['':'- Choose SubCategory -']"/>
+                        <g:select name="subCat" from="" value="subCat"/>
                     </td>
                 </tr>
 
@@ -502,21 +547,27 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
     </g:form>
 </div>
 
-<div class="ColumnContainer">
+<div class="ColumnContainer" >
 
-    <div class="boundingbox default" style="height: 875px">
+    <div class="boundingbox default" style="height: 1240px">
 
-
-        <h3>Homebrew Competition</h3>
-        <h3>34th Annual/23nd Empire State Open/HOTY-I Qualifier </h3>
+        <div align="center">
+            <h3>UNYHA Homebrew Competition</h3>
+            <br/>
+            <h3>34th Annual/23nd Empire State Open/HOTY-I Qualifier </h3>
+        </div>
         <br/>
         <div class="line-separator" style="margin-top: 20px;"></div>
         <br/>
-        <b>Entry Deadline:</b> Sat. April 7th @ 11 AM at Southtown Beverage (Fri. Apr. 6th noon in Buff/Syr drop offs)
+        <b><u>Entry Deadline:</u></b>
         <br/>
-        <b>Judging Date:</b>
-        Sat. April 21st @ 8 am at Roc Brewing, 56 S. Union St., Rochester – same as 2011
-        (with prejudging sessions April 17-20 as needed, location TBA)
+        <p>Sat. April 7th @ 11 AM at Southtown Beverage (Fri. Apr. 6th noon in Buff/Syr drop offs)   </p>
+        <br/>
+        <br/>
+        <b><u>Judging Date:</u></b> <br/>
+        <p>Sat. April 21st @ 8 am at Roc Brewing, 56 S. Union St., Rochester – same as 2011
+        (with prejudging sessions April 17-20 as needed, location TBA)   </p>
+        <br/>
         <br/>
         <b><u>Entry Rules:</u></b><p>Two bottles per entry (10-17 oz. glass bottles; capped, corked, or swing tops; no labels
     on bottles – please read our bottle rules!)
@@ -529,21 +580,24 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
         <b><u>Get ‘em to us:</u></b>
         <p>
             Bring to our meeting Wed. Apr. 11, 7:30-9:00 PM @ Merchants Grill (near Culver Rd.)
-            <br/>
-            <b>Drop off</b> at Niagara Traditions (1296 Sheridan Dr, Tonawanda) or E.J. Wren
+            <br/> <br/>
+            <b>Drop off</b> <br/> Niagara Traditions (1296 Sheridan Dr, Tonawanda) or E.J. Wren
         (Ponderosa Plz/Old Liverpool Rd, Liverpool) no later than noon on Fri. April 6th
             <br/>
-            <b>Drop off</b> at Southtown Beverage (2933 W. Henrietta Rd, Rochester)
-        no later than 11 AM Sat. Apr. 7th
             <br/>
-            <b>Ship to</b> Southtown Beverage (2933 W. Henrietta Rd, Rochester ZIP) for receipt by
+            <b>Drop off</b> <br/> Southtown Beverage (2933 W. Henrietta Rd, Rochester)
+        no later than 11 AM Sat. Apr. 7th
+            <br/> <br/>
+            <b>Ship to</b> <br/>Southtown Beverage (2933 W. Henrietta Rd, Rochester ZIP) for receipt by
         Fri., April 6th – Please note the NEW ship-to address!
+            <br/>
             <br/>
             <b>DO NOT SHIP OR DROP OFF to Roc Brewing period!! THEY WILL GET LOST!</b>
         </p>
         <br/>
-        UNYHA’s competition is part of the New York State Homebrewer Invitational program
+        <p> UNYHA’s competition is part of the New York State Homebrewer Invitational program
         (HOTY-I). Read the NEW rules & regs, view details & rankings at www.nyshoty.org
+        </p>
         <br/>
         <b> Prizes: </b> <p>Ribbons & prizes awarded for Best in Category, Placing in Category,
     and Best of Show will include all styles this year. The BOS Beer grand prize is a
@@ -556,15 +610,16 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
     stewards should complete the registration form on our website, or contact Judge Director Thomas Barnes,
     585-328-0148, (thomasbarnes@frontiernet.net) no later than 4-19-2012.  Beds for judges can be arranged.
     </p>
+        <p>
         <br/>
         Questions? Contact Organizer Tom Ocque 315.576.0296, tommyok@mac.com
         <br/>
         A fabulous post-competition Dinner for us & spouses/guests will be held at Roc Brewing on the evening
         of Saturday, April 21st - details available soon at www.unyha.com.
-
+        </p>
 
         <div align="center">
-            <div align="right" style="float: none;padding:40px;">
+            <div align="center" style="float: none;padding:40px;">
 
                 <button id="enter-contest">Enter Homebrew Competition</button>
             </div>
